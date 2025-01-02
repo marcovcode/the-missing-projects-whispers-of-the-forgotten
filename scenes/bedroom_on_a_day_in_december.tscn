@@ -1,9 +1,26 @@
-[gd_scene load_steps=3 format=3 uid="uid://bdi3kir8njn2y"]
+[gd_scene load_steps=4 format=3 uid="uid://bdi3kir8njn2y"]
 
 [ext_resource type="PackedScene" uid="uid://dujkru6akoqmu" path="res://scenes/charlotte.tscn" id="1_46m7i"]
 [ext_resource type="PackedScene" uid="uid://bi0ymuhevvcob" path="res://scenes/bed.tscn" id="2_ll780"]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_17soo"]
+size = Vector2(20, 120)
+
 [node name="BedroomOnADayInDecember" type="Node2D"]
+
+[node name="Boundaries" type="Node2D" parent="."]
+
+[node name="Left" type="StaticBody2D" parent="Boundaries"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Boundaries/Left"]
+position = Vector2(-10, 60)
+shape = SubResource("RectangleShape2D_17soo")
+
+[node name="Right" type="StaticBody2D" parent="Boundaries"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Boundaries/Right"]
+position = Vector2(170, 60)
+shape = SubResource("RectangleShape2D_17soo")
 
 [node name="Charlotte" parent="." instance=ExtResource("1_46m7i")]
 z_index = 1
