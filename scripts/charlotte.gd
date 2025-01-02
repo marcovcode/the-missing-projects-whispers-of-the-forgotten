@@ -2,7 +2,7 @@ extends CharacterBody2D
 
 @onready var animated_sprite = $AnimatedSprite2D
 
-const SPEED = 40
+const SPEED = 25
 
 func move():
     var direction := Input.get_axis("move_left", "move_right")
