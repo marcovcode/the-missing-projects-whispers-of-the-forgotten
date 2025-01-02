@@ -15,6 +15,10 @@ run/main_scene="res://scenes/bedroom_on_a_day_in_december.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
 config/icon="res://icon.svg"
 
+[autoload]
+
+GlobalVariables="*res://scripts/global_variables.gd"
+
 [display]
 
 window/size/viewport_width=160
