@@ -1,8 +1,13 @@
-[gd_scene load_steps=2 format=3 uid="uid://bdi3kir8njn2y"]
+[gd_scene load_steps=3 format=3 uid="uid://bdi3kir8njn2y"]
 
 [ext_resource type="PackedScene" uid="uid://dujkru6akoqmu" path="res://scenes/charlotte.tscn" id="1_46m7i"]
+[ext_resource type="PackedScene" uid="uid://bi0ymuhevvcob" path="res://scenes/bed.tscn" id="2_ll780"]
 
 [node name="BedroomOnADayInDecember" type="Node2D"]
 
 [node name="Charlotte" parent="." instance=ExtResource("1_46m7i")]
-position = Vector2(76, 95)
+z_index = 1
+position = Vector2(77, 94)
+
+[node name="Bed" parent="." instance=ExtResource("2_ll780")]
+position = Vector2(30, 96)
