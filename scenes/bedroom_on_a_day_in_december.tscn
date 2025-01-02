@@ -1,3 +1,8 @@
-[gd_scene format=3 uid="uid://bdi3kir8njn2y"]
+[gd_scene load_steps=2 format=3 uid="uid://bdi3kir8njn2y"]
+
+[ext_resource type="PackedScene" uid="uid://dujkru6akoqmu" path="res://scenes/charlotte.tscn" id="1_46m7i"]
 
 [node name="BedroomOnADayInDecember" type="Node2D"]
+
+[node name="Charlotte" parent="." instance=ExtResource("1_46m7i")]
+position = Vector2(76, 95)
