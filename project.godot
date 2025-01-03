@@ -20,6 +20,7 @@ config/icon="res://icon.svg"
 GlobalVariables="*res://scripts/global_variables.gd"
 Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 SaveSystem="*res://scripts/save_system.gd"
+DialogueManager="*res://scripts/dialogue_manager.gd"
 
 [dialogic]
 
@@ -33,7 +34,7 @@ layout/default_style="res://styles/bottom/bottom.tres"
 variables={}
 glossary/default_case_sensitive=true
 extensions_folder="res://addons/dialogic_additions"
-text/letter_speed=0.01
+text/letter_speed=0.025
 text/initial_text_reveal_skippable=true
 text/text_reveal_skip_delay=0.1
 text/advance_delay=0.1
