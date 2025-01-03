@@ -1,0 +1,6 @@
+charlotte: Alright… here we go.
+label insert_diary_code
+[text_input text="Insert the code." var="inserted_diary_code" placeholder="0000"]
+if {inserted_diary_code} != {diary_code}:
+	jump insert_diary_code
+charlotte: Finally.

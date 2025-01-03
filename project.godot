@@ -31,12 +31,16 @@ directories/dtl_directory={
 "forgot_diary_code": "res://timelines/forgot_diary_code.dtl",
 "found_diary_code": "res://timelines/found_diary_code.dtl",
 "game_saved": "res://timelines/game_saved.dtl",
+"insert_diary_code": "res://timelines/insert_diary_code.dtl",
 "just_clothes_in_wardrobe": "res://timelines/just_clothes_in_wardrobe.dtl",
 "woke_up": "res://timelines/woke_up.dtl"
 }
 layout/style_list=["res://styles/full_screen/full_screen.tres", "res://styles/top/top.tres"]
 layout/default_style="res://styles/top/top.tres"
-variables={}
+variables={
+"diary_code": "1234",
+"inserted_diary_code": "0"
+}
 glossary/default_case_sensitive=true
 extensions_folder="res://addons/dialogic_additions"
 text/letter_speed=0.025
