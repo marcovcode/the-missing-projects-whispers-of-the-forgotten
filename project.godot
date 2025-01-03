@@ -25,10 +25,11 @@ SaveSystem="*res://scripts/save_system.gd"
 
 directories/dch_directory={}
 directories/dtl_directory={
-"a_day_in_december": "res://timelines/a_day_in_december.dtl"
+"a_day_in_december": "res://timelines/a_day_in_december.dtl",
+"game_saved": "res://timelines/game_saved.dtl"
 }
-layout/style_list=["res://styles/full_screen/full_screen.tres"]
-layout/default_style="res://styles/full_screen/full_screen.tres"
+layout/style_list=["res://styles/full_screen/full_screen.tres", "res://styles/bottom/bottom.tres"]
+layout/default_style="res://styles/bottom/bottom.tres"
 variables={}
 glossary/default_case_sensitive=true
 extensions_folder="res://addons/dialogic_additions"
