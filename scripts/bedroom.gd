@@ -10,5 +10,6 @@ func _ready():
     Dialogic.timeline_started.connect(_on_timeline_started)
     Dialogic.timeline_ended.connect(_on_timeline_ended)
 
-    if GlobalVariables.game_state["time_passage"] == "a_day_in_december":
+    if GlobalVariables.game_state["time_passage"] == "a_day_in_december" and not GlobalVariables.game_state["dialogues"]["has_shown_a_day_in_december"]:
         Dialogic.start("a_day_in_december")
+        GlobalVariables.game_state["dialogues"]["has_shown_a_day_in_december"] = true
