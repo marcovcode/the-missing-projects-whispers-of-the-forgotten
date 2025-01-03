@@ -1,10 +1,11 @@
-[gd_scene load_steps=7 format=3 uid="uid://bdi3kir8njn2y"]
+[gd_scene load_steps=8 format=3 uid="uid://bdi3kir8njn2y"]
 
 [ext_resource type="PackedScene" uid="uid://dujkru6akoqmu" path="res://scenes/charlotte.tscn" id="1_wrk0b"]
 [ext_resource type="Script" path="res://scripts/bedroom.gd" id="1_xop5t"]
 [ext_resource type="PackedScene" uid="uid://bi0ymuhevvcob" path="res://scenes/bed.tscn" id="2_6ft0p"]
 [ext_resource type="Texture2D" uid="uid://nwku32srpnk" path="res://assets/sprites/desk.png" id="4_wfkn8"]
 [ext_resource type="PackedScene" uid="uid://dxh5tt3owbnqm" path="res://scenes/diary.tscn" id="5_1xmca"]
+[ext_resource type="PackedScene" uid="uid://co8vlmg8lxm5l" path="res://scenes/wardrobe.tscn" id="6_owm4t"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_17soo"]
 size = Vector2(20, 120)
@@ -34,8 +35,11 @@ position = Vector2(30, 93)
 position = Vector2(30, 96)
 
 [node name="Desk" type="Sprite2D" parent="."]
-position = Vector2(104, 97)
+position = Vector2(84, 97)
 texture = ExtResource("4_wfkn8")
 
 [node name="Diary" parent="." instance=ExtResource("5_1xmca")]
-position = Vector2(104, 92)
+position = Vector2(84, 92)
+
+[node name="Wardrobe" parent="." instance=ExtResource("6_owm4t")]
+position = Vector2(139, 85)

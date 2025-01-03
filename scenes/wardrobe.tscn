@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://co8vlmg8lxm5l"]
+
+[ext_resource type="Texture2D" uid="uid://h8hjqa5aqgw3" path="res://assets/sprites/wardrobe.png" id="1_uylxu"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_36scb"]
+size = Vector2(24, 32)
+
+[node name="Wardrobe" type="Area2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_uylxu")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_36scb")
