@@ -13,7 +13,6 @@ config_version=5
 config/name="The Missing Projects: Whispers of the Forgotten"
 run/main_scene="res://scenes/bedroom.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
-config/icon="res://icon.svg"
 
 [autoload]
 
@@ -29,6 +28,7 @@ directories/dch_directory={
 }
 directories/dtl_directory={
 "a_day_in_december": "res://timelines/a_day_in_december.dtl",
+"forgot_diary_code": "res://timelines/forgot_diary_code.dtl",
 "game_saved": "res://timelines/game_saved.dtl",
 "woke_up": "res://timelines/woke_up.dtl"
 }
