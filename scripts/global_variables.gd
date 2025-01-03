@@ -9,7 +9,4 @@ var game_state = {
         "x": 30,
         "y": 93
     },
-    "dialogues": {
-        "has_shown_a_day_in_december": false
-    }
 }
