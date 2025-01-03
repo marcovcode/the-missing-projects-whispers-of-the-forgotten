@@ -1,12 +1,14 @@
-[gd_scene load_steps=4 format=3 uid="uid://bdi3kir8njn2y"]
+[gd_scene load_steps=5 format=3 uid="uid://bdi3kir8njn2y"]
 
 [ext_resource type="PackedScene" uid="uid://dujkru6akoqmu" path="res://scenes/charlotte.tscn" id="1_wrk0b"]
+[ext_resource type="Script" path="res://scripts/bedroom.gd" id="1_xop5t"]
 [ext_resource type="PackedScene" uid="uid://bi0ymuhevvcob" path="res://scenes/bed.tscn" id="2_6ft0p"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_17soo"]
 size = Vector2(20, 120)
 
 [node name="Bedroom" type="Node2D"]
+script = ExtResource("1_xop5t")
 
 [node name="Boundaries" type="Node2D" parent="."]
 
