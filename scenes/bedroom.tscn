@@ -26,7 +26,7 @@ shape = SubResource("RectangleShape2D_17soo")
 
 [node name="Charlotte" parent="." instance=ExtResource("1_wrk0b")]
 z_index = 1
-position = Vector2(77, 94)
+position = Vector2(30, 93)
 
 [node name="Bed" parent="." instance=ExtResource("2_6ft0p")]
 position = Vector2(30, 96)

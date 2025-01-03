@@ -5,11 +5,23 @@ extends CharacterBody2D
 const SPEED = 25
 var can_move = true
 
+func load_position():
+    position.x = GlobalVariables.game_state["charlotte"]["x"]
+    position.y = GlobalVariables.game_state["charlotte"]["y"]
+
+func connect_timeline_signals():
+    Dialogic.timeline_started.connect(_on_timeline_started)
+    Dialogic.timeline_ended.connect(_on_timeline_ended)
+
 func _on_timeline_started():
     can_move = false
 
 func _on_timeline_ended():
     can_move = true
+
+func save_position():
+    GlobalVariables.game_state["charlotte"]["x"] = position.x
+    GlobalVariables.game_state["charlotte"]["y"] = position.y
 
 func move():
     if not can_move:
@@ -23,6 +35,7 @@ func move():
         velocity.x = move_toward(velocity.x, 0, SPEED)
 
     move_and_slide()
+    save_position()
 
 func animate():
     if velocity.x != 0:
@@ -37,8 +50,8 @@ func flip():
         animated_sprite.flip_h = false
 
 func _ready():
-    Dialogic.timeline_started.connect(_on_timeline_started)
-    Dialogic.timeline_ended.connect(_on_timeline_ended)
+    load_position()
+    connect_timeline_signals()
 
 func _physics_process(delta: float) -> void:
     move()
