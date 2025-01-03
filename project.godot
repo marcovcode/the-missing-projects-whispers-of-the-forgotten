@@ -29,7 +29,9 @@ directories/dch_directory={
 directories/dtl_directory={
 "a_day_in_december": "res://timelines/a_day_in_december.dtl",
 "forgot_diary_code": "res://timelines/forgot_diary_code.dtl",
+"found_diary_code": "res://timelines/found_diary_code.dtl",
 "game_saved": "res://timelines/game_saved.dtl",
+"just_clothes_in_wardrobe": "res://timelines/just_clothes_in_wardrobe.dtl",
 "woke_up": "res://timelines/woke_up.dtl"
 }
 layout/style_list=["res://styles/full_screen/full_screen.tres", "res://styles/top/top.tres"]

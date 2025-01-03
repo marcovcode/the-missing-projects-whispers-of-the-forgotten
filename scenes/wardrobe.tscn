@@ -1,11 +1,13 @@
-[gd_scene load_steps=3 format=3 uid="uid://co8vlmg8lxm5l"]
+[gd_scene load_steps=4 format=3 uid="uid://co8vlmg8lxm5l"]
 
+[ext_resource type="Script" path="res://scripts/wardrobe.gd" id="1_5xmi0"]
 [ext_resource type="Texture2D" uid="uid://h8hjqa5aqgw3" path="res://assets/sprites/wardrobe.png" id="1_uylxu"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_36scb"]
 size = Vector2(24, 32)
 
 [node name="Wardrobe" type="Area2D"]
+script = ExtResource("1_5xmi0")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_uylxu")
