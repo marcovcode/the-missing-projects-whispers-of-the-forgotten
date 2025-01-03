@@ -9,9 +9,9 @@ var game_state = {
         "y": 93
     },
 
-    "time_passage": "a_day_in_december",
+    "story_progress": {
+        "current_chapter": "a_day_in_december",
 
-    "dialogues": {
         "a_day_in_december": {
             "has_shown_woke_up": false
         }
