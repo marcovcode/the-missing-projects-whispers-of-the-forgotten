@@ -27,7 +27,8 @@ DialogueManager="*res://scripts/dialogue_manager.gd"
 directories/dch_directory={}
 directories/dtl_directory={
 "a_day_in_december": "res://timelines/a_day_in_december.dtl",
-"game_saved": "res://timelines/game_saved.dtl"
+"game_saved": "res://timelines/game_saved.dtl",
+"woke_up": "res://timelines/woke_up.dtl"
 }
 layout/style_list=["res://styles/full_screen/full_screen.tres", "res://styles/top/top.tres"]
 layout/default_style="res://styles/top/top.tres"
