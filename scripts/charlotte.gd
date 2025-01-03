@@ -38,6 +38,10 @@ func move():
     save_position()
 
 func animate():
+    if not GlobalVariables.can_interact:
+        animated_sprite.play("idle")
+        return
+
     if velocity.x != 0:
         animated_sprite.play("walk")
     else:
