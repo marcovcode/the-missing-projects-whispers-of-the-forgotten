@@ -1,11 +1,13 @@
-[gd_scene load_steps=3 format=3 uid="uid://bi0ymuhevvcob"]
+[gd_scene load_steps=4 format=3 uid="uid://bi0ymuhevvcob"]
 
 [ext_resource type="Texture2D" uid="uid://dkhei0jopbbwi" path="res://assets/sprites/bed.png" id="1_4citf"]
+[ext_resource type="Script" path="res://scripts/bed.gd" id="1_6srg0"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_uoecu"]
 size = Vector2(28, 10)
 
 [node name="Bed" type="Area2D"]
+script = ExtResource("1_6srg0")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_4citf")
