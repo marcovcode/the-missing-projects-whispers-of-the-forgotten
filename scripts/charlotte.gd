@@ -2,7 +2,7 @@ extends CharacterBody2D
 
 @onready var animated_sprite = $AnimatedSprite2D
 
-const SPEED = 25
+const SPEED = 30
 var can_move = true
 
 func load_position():
