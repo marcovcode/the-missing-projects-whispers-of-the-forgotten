@@ -372,7 +372,7 @@ metadata/_edit_layout_mode = 1
 metadata/_edit_use_custom_anchors = true
 metadata/_edit_group_ = true
 
-[node name="DialogicNode_NameLabel" type="Label" parent="VN_TextboxLayer/Anchor/AnimationParent/Sizer/DialogTextPanel/NameLabelHolder/NameLabelPanel" node_paths=PackedStringArray("name_label_root")]
+[node name="DialogicNode_NameLabel" type="Label" parent="VN_TextboxLayer/Anchor/AnimationParent/Sizer/DialogTextPanel/NameLabelHolder/NameLabelPanel"]
 unique_name_in_owner = true
 layout_mode = 2
 theme_override_colors/font_color = Color(1, 1, 1, 1)
@@ -380,7 +380,6 @@ theme_override_fonts/font = SubResource("FontVariation_v8y64")
 theme_override_font_sizes/font_size = 15
 text = "S"
 script = ExtResource("14_yyb28")
-name_label_root = NodePath("..")
 
 [node name="Glossary" parent="." instance=ExtResource("10_kdksv")]
 visible = false

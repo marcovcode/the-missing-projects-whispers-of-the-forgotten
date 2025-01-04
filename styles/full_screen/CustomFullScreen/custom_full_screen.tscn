@@ -1,0 +1,41 @@
+[gd_scene load_steps=6 format=3 uid="uid://db3x3n68jpitv"]
+
+[ext_resource type="Script" path="res://styles/full_screen/CustomFullScreen/default_layout_base.gd" id="1_ifsho"]
+[ext_resource type="Script" path="res://addons/dialogic/Modules/Text/node_dialog_text.gd" id="2_6y7gp"]
+[ext_resource type="FontFile" uid="uid://sdkkg07xuqar" path="res://fonts/04B_03.ttf" id="2_vt5kw"]
+[ext_resource type="Script" path="res://addons/dialogic/Modules/Text/node_type_sound.gd" id="3_r3nme"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_h0rfj"]
+bg_color = Color(0, 0, 0, 1)
+
+[node name="Custom" type="CanvasLayer"]
+script = ExtResource("1_ifsho")
+
+[node name="PanelContainer" type="PanelContainer" parent="."]
+offset_right = 160.0
+offset_bottom = 120.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_h0rfj")
+
+[node name="DialogicNode_DialogText" type="RichTextLabel" parent="PanelContainer" node_paths=PackedStringArray("textbox_root")]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 4
+mouse_filter = 1
+theme_override_colors/default_color = Color(1, 1, 1, 1)
+theme_override_fonts/normal_font = ExtResource("2_vt5kw")
+theme_override_font_sizes/bold_italics_font_size = 15
+theme_override_font_sizes/italics_font_size = 15
+theme_override_font_sizes/normal_font_size = 8
+theme_override_font_sizes/bold_font_size = 15
+bbcode_enabled = true
+text = "Some default text"
+fit_content = true
+visible_characters_behavior = 1
+script = ExtResource("2_6y7gp")
+alignment = 1
+textbox_root = NodePath("")
+
+[node name="DialogicNode_TypeSounds" type="AudioStreamPlayer" parent="PanelContainer/DialogicNode_DialogText"]
+unique_name_in_owner = true
+script = ExtResource("3_r3nme")
+play_every_character = 0
