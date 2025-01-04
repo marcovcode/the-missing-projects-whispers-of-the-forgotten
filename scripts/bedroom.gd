@@ -1,7 +1,10 @@
 extends Node2D
 
+var story_progress = GlobalVariables.game_state["story_progress"]
+var a_day_in_december_progress = GlobalVariables.game_state["story_progress"]["a_day_in_december"]
+
 func _ready():
-    if GlobalVariables.game_state["story_progress"]["current_chapter"] == "a_day_in_december":
-        if not GlobalVariables.game_state["story_progress"]["a_day_in_december"]["has_shown_woke_up"]:
+    if story_progress["current_chapter"] == "a_day_in_december":
+        if not a_day_in_december_progress["has_shown_woke_up"]:
+            a_day_in_december_progress["has_shown_woke_up"] = true
             Dialogic.start("woke_up")
-            GlobalVariables.game_state["story_progress"]["a_day_in_december"]["has_shown_woke_up"] = true

@@ -1,13 +1,14 @@
 extends CharacterBody2D
 
 @onready var animated_sprite = $AnimatedSprite2D
+var charlotte = GlobalVariables.game_state["charlotte"]
 
 const SPEED = 30
 var can_move = true
 
 func load_position():
-    position.x = GlobalVariables.game_state["charlotte"]["x"]
-    position.y = GlobalVariables.game_state["charlotte"]["y"]
+    position.x = charlotte["x"]
+    position.y = charlotte["y"]
 
 func connect_timeline_signals():
     Dialogic.timeline_started.connect(_on_timeline_started)
@@ -20,8 +21,8 @@ func _on_timeline_ended():
     can_move = true
 
 func save_position():
-    GlobalVariables.game_state["charlotte"]["x"] = position.x
-    GlobalVariables.game_state["charlotte"]["y"] = position.y
+    charlotte["x"] = position.x
+    charlotte["y"] = position.y
 
 func move():
     if not can_move:
