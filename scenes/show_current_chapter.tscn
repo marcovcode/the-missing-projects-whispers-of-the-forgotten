@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://wv7vefjnkaph"]
+
+[ext_resource type="Script" path="res://scripts/show_current_chapter.gd" id="1_avk41"]
+
+[node name="ShowCurrentChapter" type="Node2D"]
+script = ExtResource("1_avk41")

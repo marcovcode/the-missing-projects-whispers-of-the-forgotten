@@ -1,5 +1,7 @@
 extends Node2D
 
+var current_chapter = GlobalVariables.game_state["story_progress"]["current_chapter"]
+
 func _on_timeline_started():
     Dialogic.Inputs.set_block_signals(true)
 
@@ -10,5 +12,5 @@ func _on_timeline_ended():
 func _ready():
     Dialogic.timeline_started.connect(_on_timeline_started)
     Dialogic.timeline_ended.connect(_on_timeline_ended)
-    
-    Dialogic.start("a_day_in_december")
+
+    Dialogic.start(current_chapter)
