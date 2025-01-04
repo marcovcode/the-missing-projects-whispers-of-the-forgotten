@@ -33,7 +33,8 @@ directories/dtl_directory={
 "game_saved": "res://timelines/game_saved.dtl",
 "insert_diary_code": "res://timelines/insert_diary_code.dtl",
 "just_clothes_in_wardrobe": "res://timelines/just_clothes_in_wardrobe.dtl",
-"woke_up": "res://timelines/woke_up.dtl"
+"woke_up": "res://timelines/woke_up.dtl",
+"wrote_diary_code_somewhere": "res://timelines/wrote_diary_code_somewhere.dtl"
 }
 layout/style_list=["res://styles/top/top.tres", "res://styles/reference/reference.tres", "res://styles/full_screen/full_screen.tres"]
 layout/default_style="res://styles/top/top.tres"
