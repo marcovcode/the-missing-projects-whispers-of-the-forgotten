@@ -132,6 +132,7 @@ func move_layer(from_index:int, to_index:int) -> void:
 func set_layer_scene(layer_id:String, scene:String) -> void:
 	if not has_layer(layer_id):
 		return
+
 	layer_info[layer_id].scene = load(scene)
 	changed.emit()
 
@@ -246,8 +247,8 @@ func clone() -> DialogicStyle:
 	style.inherits = inherits
 
 	var base_info := get_layer_info("")
-	style.set_layer_scene("", base_info.path)
-	style.set_layer_overrides("", base_info.overrides)
+	set_layer_scene("", base_info.path)
+	set_layer_overrides("", base_info.overrides)
 
 	for id in layer_list:
 		var info := get_layer_info(id)

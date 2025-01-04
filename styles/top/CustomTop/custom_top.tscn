@@ -1,0 +1,134 @@
+[gd_scene load_steps=11 format=3 uid="uid://g3er0exnsn5n"]
+
+[ext_resource type="Script" path="res://styles/top/CustomTop/default_layout_base.gd" id="1_ifsho"]
+[ext_resource type="FontFile" uid="uid://sdkkg07xuqar" path="res://fonts/04B_03.ttf" id="2_030jl"]
+[ext_resource type="Script" path="res://addons/dialogic/Modules/Text/node_dialog_text.gd" id="2_r8w4t"]
+[ext_resource type="Script" path="res://addons/dialogic/Modules/Text/node_name_label.gd" id="4_jiqr4"]
+[ext_resource type="Script" path="res://addons/dialogic/Modules/TextInput/node_text_input.gd" id="4_ryavl"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_aynu0"]
+content_margin_left = 5.0
+content_margin_top = 5.0
+content_margin_right = 5.0
+content_margin_bottom = 5.0
+bg_color = Color(0, 0, 0, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(1, 1, 1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_b7gcn"]
+bg_color = Color(0, 0, 0, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(1, 1, 1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tg5i0"]
+bg_color = Color(0, 0, 0, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(1, 1, 1, 1)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_e1wql"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_v0bns"]
+
+[node name="Custom" type="CanvasLayer"]
+script = ExtResource("1_ifsho")
+
+[node name="DialogueBox" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TextBox" type="PanelContainer" parent="DialogueBox"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.042
+anchor_right = 0.5
+anchor_bottom = 0.042
+offset_left = -15.0
+offset_top = 3.32
+offset_right = 135.0
+offset_bottom = 37.32
+grow_horizontal = 2
+size_flags_vertical = 0
+theme_override_styles/panel = SubResource("StyleBoxFlat_aynu0")
+
+[node name="DialogicNode_DialogText" type="RichTextLabel" parent="DialogueBox/TextBox"]
+unique_name_in_owner = true
+layout_mode = 2
+mouse_filter = 1
+theme_override_colors/default_color = Color(1, 1, 1, 1)
+theme_override_fonts/normal_font = ExtResource("2_030jl")
+theme_override_font_sizes/bold_italics_font_size = 15
+theme_override_font_sizes/italics_font_size = 15
+theme_override_font_sizes/normal_font_size = 8
+theme_override_font_sizes/bold_font_size = 15
+bbcode_enabled = true
+text = "Some default text"
+scroll_active = false
+visible_characters_behavior = 1
+script = ExtResource("2_r8w4t")
+
+[node name="CharacterName" type="PanelContainer" parent="DialogueBox"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.125
+anchor_top = 1.025
+anchor_right = 1.3
+anchor_bottom = 1.475
+theme_override_styles/panel = SubResource("StyleBoxFlat_b7gcn")
+
+[node name="DialogicNode_NameLabel" type="Label" parent="DialogueBox/CharacterName"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("2_030jl")
+theme_override_font_sizes/font_size = 8
+text = "Name"
+horizontal_alignment = 1
+script = ExtResource("4_jiqr4")
+
+[node name="TextInput" type="Control" parent="."]
+layout_mode = 3
+anchor_left = 0.5
+anchor_top = 0.342
+anchor_right = 0.5
+anchor_bottom = 0.342
+offset_left = -26.0
+offset_top = -0.0400009
+offset_right = 26.0
+offset_bottom = 17.96
+grow_horizontal = 2
+mouse_filter = 2
+script = ExtResource("4_ryavl")
+input_line_edit = NodePath("InputField")
+metadata/_edit_layout_mode = 1
+
+[node name="PanelContainer" type="PanelContainer" parent="TextInput"]
+layout_mode = 0
+offset_right = 52.0
+offset_bottom = 18.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_tg5i0")
+
+[node name="InputField" type="LineEdit" parent="TextInput"]
+layout_mode = 2
+offset_left = 3.0
+offset_right = 49.0
+offset_bottom = 18.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("2_030jl")
+theme_override_font_sizes/font_size = 8
+theme_override_styles/focus = SubResource("StyleBoxEmpty_e1wql")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_v0bns")
+placeholder_text = "0000"
+alignment = 1
