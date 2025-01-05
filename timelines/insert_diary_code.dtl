@@ -4,3 +4,4 @@ label insert_diary_code
 if {inserted_diary_code} != {diary_code}:
 	jump insert_diary_code
 charlotte: Finally!
+[signal arg="show_diary_page"]
