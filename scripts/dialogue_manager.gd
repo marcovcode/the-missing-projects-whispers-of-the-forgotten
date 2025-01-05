@@ -11,6 +11,8 @@ func _on_timeline_ended():
 
 func _on_timeline_signal(argument):
     if argument == "show_diary_page":
+        Transition.transition()
+        await Transition.transition_finished
         get_tree().change_scene_to_file("res://scenes/show_diary_page.tscn")
 
 func _ready():

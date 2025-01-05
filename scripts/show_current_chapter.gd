@@ -8,6 +8,9 @@ func _on_timeline_started():
 
 func _on_timeline_ended():
     Dialogic.Inputs.set_block_signals(false)
+
+    Transition.transition()
+    await Transition.transition_finished
     get_tree().change_scene_to_file("res://scenes/bedroom.tscn")
 
 func _ready():
