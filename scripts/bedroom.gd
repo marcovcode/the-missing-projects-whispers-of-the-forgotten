@@ -1,7 +1,9 @@
 extends Node2D
 
-var story_progress = GlobalVariables.game_state["story_progress"]
-var a_day_in_december_progress = GlobalVariables.game_state["story_progress"]["a_day_in_december"]
+var story_progress:
+    get: return GlobalVariables.game_state["story_progress"]
+var a_day_in_december_progress:
+    get: return GlobalVariables.game_state["story_progress"]["a_day_in_december"]
 
 func _ready():
     if story_progress["current_chapter"] == "a_day_in_december":

@@ -1,6 +1,7 @@
 extends Area2D
 
-var a_day_in_december_progress = GlobalVariables.game_state["story_progress"]["a_day_in_december"]
+var a_day_in_december_progress:
+    get: return GlobalVariables.game_state["story_progress"]["a_day_in_december"]
 
 func _physics_process(delta):
     for body in get_overlapping_bodies():

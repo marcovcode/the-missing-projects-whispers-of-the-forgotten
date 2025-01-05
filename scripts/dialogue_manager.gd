@@ -1,10 +1,13 @@
 extends Node
 
+var can_interact:
+    set(value): GlobalVariables.can_interact = value
+
 func _on_timeline_started():
-    GlobalVariables.can_interact = false
+    can_interact = false
 
 func _on_timeline_ended():
-    GlobalVariables.can_interact = true
+    can_interact = true
 
 func _ready():
     Dialogic.timeline_started.connect(_on_timeline_started)

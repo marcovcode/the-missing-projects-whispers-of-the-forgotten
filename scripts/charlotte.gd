@@ -1,7 +1,8 @@
 extends CharacterBody2D
 
 @onready var animated_sprite = $AnimatedSprite2D
-var charlotte = GlobalVariables.game_state["charlotte"]
+var charlotte:
+    get: return GlobalVariables.game_state["charlotte"]
 
 const SPEED = 30
 var can_move = true

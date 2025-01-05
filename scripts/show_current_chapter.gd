@@ -1,6 +1,7 @@
 extends Node2D
 
-var current_chapter = GlobalVariables.game_state["story_progress"]["current_chapter"]
+var current_chapter:
+    get: return GlobalVariables.game_state["story_progress"]["current_chapter"]
 
 func _on_timeline_started():
     Dialogic.Inputs.set_block_signals(true)
