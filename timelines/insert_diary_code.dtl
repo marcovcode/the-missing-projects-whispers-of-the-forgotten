@@ -2,6 +2,8 @@ charlotte: Alright…[pause=0.5] here we go...[pause=0.5] I just have to insert 
 label insert_diary_code
 [text_input text="Insert the code." var="inserted_diary_code" placeholder="0000"]
 if {inserted_diary_code} != {diary_code}:
+	charlotte: Wait...[pause=0.5] that’s not it...[pause=0.5] why isn’t this working?[pause=0.5] I must’ve inserted the code wrong...
+	charlotte: ...I’ll have to try again.
 	jump insert_diary_code
-charlotte: Finally!
+charlotte: Finally![pause=0.5] I can open it now.
 [signal arg="show_diary_page"]
