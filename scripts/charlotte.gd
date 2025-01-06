@@ -3,6 +3,10 @@ extends CharacterBody2D
 @onready var animated_sprite = $AnimatedSprite2D
 var charlotte:
     get: return GlobalVariables.game_state["charlotte"]
+var can_interact:
+    get: return GlobalVariables.can_interact
+var is_transitioning:
+    get: return GlobalVariables.is_transitioning
 
 const SPEED = 30
 var can_move = true
@@ -26,7 +30,7 @@ func save_position():
     charlotte["y"] = position.y
 
 func move():
-    if not can_move:
+    if not can_move or is_transitioning:
         return
 
     var direction := Input.get_axis("move_left", "move_right")
@@ -40,7 +44,7 @@ func move():
     save_position()
 
 func animate():
-    if not GlobalVariables.can_interact:
+    if not can_interact or is_transitioning:
         animated_sprite.play("idle")
         return
 

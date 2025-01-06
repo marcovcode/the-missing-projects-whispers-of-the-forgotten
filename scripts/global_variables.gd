@@ -2,6 +2,7 @@ extends Node
 
 var save_file_path = "user://save.data"
 var can_interact = true
+var is_transitioning = false
 
 var game_state = {
     "charlotte": {
