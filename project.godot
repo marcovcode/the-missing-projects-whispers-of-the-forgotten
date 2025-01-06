@@ -31,6 +31,7 @@ directories/dtl_directory={
 "a_day_in_december": "res://timelines/a_day_in_december.dtl",
 "forgot_diary_code": "res://timelines/forgot_diary_code.dtl",
 "found_basket_piece": "res://timelines/found_basket_piece.dtl",
+"found_bed_piece": "res://timelines/found_bed_piece.dtl",
 "found_wardrobe_piece": "res://timelines/found_wardrobe_piece.dtl",
 "game_saved": "res://timelines/game_saved.dtl",
 "insert_diary_code": "res://timelines/insert_diary_code.dtl",
