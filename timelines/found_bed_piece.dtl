@@ -1,3 +1,4 @@
 charlotte: A piece of the post-it...[pause=0.5] under the bed?[pause=0.5] How did it end up here?
 charlotte: It’s part of the code![pause=0.5] There are some numbers...
 charlotte: I need to find the rest...[pause=0.5] I can’t make sense of this yet.
+[signal arg="check_post_it_pieces"]

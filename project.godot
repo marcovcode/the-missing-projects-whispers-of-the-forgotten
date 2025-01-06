@@ -21,6 +21,7 @@ SaveSystem="*res://scripts/save_system.gd"
 DialogueManager="*res://scripts/dialogue_manager.gd"
 Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 Transition="*res://scenes/transition.tscn"
+PostIt="*res://scripts/post_it.gd"
 
 [dialogic]
 
@@ -29,6 +30,7 @@ directories/dch_directory={
 }
 directories/dtl_directory={
 "a_day_in_december": "res://timelines/a_day_in_december.dtl",
+"figures_out_diary_code": "res://timelines/figures_out_diary_code.dtl",
 "forgot_diary_code": "res://timelines/forgot_diary_code.dtl",
 "found_basket_piece": "res://timelines/found_basket_piece.dtl",
 "found_bed_piece": "res://timelines/found_bed_piece.dtl",
