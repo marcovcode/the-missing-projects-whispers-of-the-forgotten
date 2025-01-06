@@ -17,6 +17,7 @@ var game_state = {
             "has_shown_woke_up": false,
             "has_checked_diary": false,
             "has_found_basket_piece": false,
+            "has_found_wardrobe_piece": false,
             "knows_diary_code": false
         }
     }
