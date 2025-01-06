@@ -13,7 +13,7 @@ func _physics_process(delta):
                 if a_day_in_december_progress["knows_diary_code"]:
                     Dialogic.start("insert_diary_code")
                 else:
-                    Dialogic.start("wrote_diary_code_somewhere")
+                    Dialogic.start("should_find_post_it")
             else:
                 a_day_in_december_progress["has_checked_diary"] = true
                 Dialogic.start("forgot_diary_code")

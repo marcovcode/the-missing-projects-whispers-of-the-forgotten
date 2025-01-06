@@ -1,4 +1,4 @@
 charlotte: A piece of paper...[pause=0.5] behind my clothes?[pause=0.5] How did it end up here?
 charlotte: This...[pause=0.5] it’s part of the post-it![pause=0.5] I can make out some numbers...
-charlotte: What do these mean?[pause=0.5] I need to find the rest.
+charlotte: I need to find the rest in order to figure the code out.
 [signal arg="check_post_it_pieces"]
