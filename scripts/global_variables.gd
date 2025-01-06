@@ -16,6 +16,7 @@ var game_state = {
         "a_day_in_december": {
             "has_shown_woke_up": false,
             "has_checked_diary": false,
+            "has_found_basket_piece": false,
             "knows_diary_code": false
         }
     }

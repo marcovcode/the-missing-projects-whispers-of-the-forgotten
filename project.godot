@@ -30,11 +30,13 @@ directories/dch_directory={
 directories/dtl_directory={
 "a_day_in_december": "res://timelines/a_day_in_december.dtl",
 "forgot_diary_code": "res://timelines/forgot_diary_code.dtl",
+"found_basket_piece": "res://timelines/found_basket_piece.dtl",
 "found_diary_code": "res://timelines/found_diary_code.dtl",
 "game_saved": "res://timelines/game_saved.dtl",
 "insert_diary_code": "res://timelines/insert_diary_code.dtl",
 "just_clothes_in_wardrobe": "res://timelines/just_clothes_in_wardrobe.dtl",
 "the_amnesiac_dream": "res://timelines/the_amnesiac_dream.dtl",
+"theres_only_trash": "res://timelines/theres_only_trash.dtl",
 "woke_up": "res://timelines/woke_up.dtl",
 "wrote_diary_code_somewhere": "res://timelines/wrote_diary_code_somewhere.dtl"
 }
