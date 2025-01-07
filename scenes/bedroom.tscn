@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://bdi3kir8njn2y"]
+[gd_scene load_steps=11 format=3 uid="uid://bdi3kir8njn2y"]
 
 [ext_resource type="PackedScene" uid="uid://dujkru6akoqmu" path="res://scenes/charlotte.tscn" id="1_wrk0b"]
 [ext_resource type="Script" path="res://scripts/bedroom.gd" id="1_xop5t"]
@@ -11,7 +11,14 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_17soo"]
 size = Vector2(20, 120)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fln54"]
+size = Vector2(160, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_u4dsu"]
+size = Vector2(16, 4)
+
 [node name="Bedroom" type="Node2D"]
+y_sort_enabled = true
 script = ExtResource("1_xop5t")
 
 [node name="Boundaries" type="Node2D" parent="."]
@@ -28,22 +35,41 @@ shape = SubResource("RectangleShape2D_17soo")
 position = Vector2(170, 60)
 shape = SubResource("RectangleShape2D_17soo")
 
+[node name="Bottom" type="StaticBody2D" parent="Boundaries"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Boundaries/Bottom"]
+position = Vector2(80, 130)
+shape = SubResource("RectangleShape2D_fln54")
+
+[node name="Top" type="StaticBody2D" parent="Boundaries"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Boundaries/Top"]
+position = Vector2(80, -10)
+shape = SubResource("RectangleShape2D_fln54")
+
 [node name="Charlotte" parent="." instance=ExtResource("1_wrk0b")]
-z_index = 1
-position = Vector2(30, 93)
+unique_name_in_owner = true
+position = Vector2(31, 43)
 
 [node name="Bed" parent="." instance=ExtResource("2_6ft0p")]
-position = Vector2(30, 96)
+position = Vector2(28, 15)
 
-[node name="Desk" type="Sprite2D" parent="."]
-position = Vector2(74, 97)
+[node name="Desk" type="StaticBody2D" parent="."]
+position = Vector2(132, 96)
+
+[node name="Sprite2D" type="Sprite2D" parent="Desk"]
 texture = ExtResource("4_wfkn8")
 
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Desk"]
+position = Vector2(0, 2)
+shape = SubResource("RectangleShape2D_u4dsu")
+
 [node name="Diary" parent="." instance=ExtResource("5_1xmca")]
-position = Vector2(74, 92)
+position = Vector2(132, 91)
 
 [node name="Wardrobe" parent="." instance=ExtResource("6_owm4t")]
-position = Vector2(112, 84)
+position = Vector2(137, 27)
 
 [node name="Basket" parent="." instance=ExtResource("7_lflpr")]
-position = Vector2(146, 96)
+position = Vector2(20, 97)
+rotation = 0.0050324

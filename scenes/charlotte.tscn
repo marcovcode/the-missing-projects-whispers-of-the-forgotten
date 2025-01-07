@@ -49,9 +49,9 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_kpio6"]
-size = Vector2(8, 16)
+size = Vector2(8, 8)
 
-[node name="Charlotte" type="CharacterBody2D" groups=["charlotte"]]
+[node name="Charlotte" type="CharacterBody2D"]
 script = ExtResource("1_7gsxg")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
@@ -59,4 +59,10 @@ sprite_frames = SubResource("SpriteFrames_1t317")
 animation = &"walk"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 4)
 shape = SubResource("RectangleShape2D_kpio6")
+
+[node name="RayCast2D" type="RayCast2D" parent="."]
+y_sort_enabled = true
+target_position = Vector2(0, 16)
+collide_with_areas = true

@@ -4,13 +4,14 @@
 [ext_resource type="Texture2D" uid="uid://h8hjqa5aqgw3" path="res://assets/sprites/wardrobe.png" id="1_uylxu"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_36scb"]
-size = Vector2(24, 32)
+size = Vector2(24, 23)
 
-[node name="Wardrobe" type="Area2D"]
+[node name="Wardrobe" type="StaticBody2D"]
 script = ExtResource("1_5xmi0")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_uylxu")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 4.5)
 shape = SubResource("RectangleShape2D_36scb")
