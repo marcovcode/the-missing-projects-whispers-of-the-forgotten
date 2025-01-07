@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://cssb6awc6tmpw" path="res://assets/sprites/diary.png" id="1_wse7o"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ffch5"]
-size = Vector2(6, 2)
+size = Vector2(8, 10)
 
 [node name="Diary" type="Area2D"]
 script = ExtResource("1_8rl55")
