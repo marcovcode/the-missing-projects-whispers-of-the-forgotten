@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://bt43j7nk2omba"]
+
+[ext_resource type="Texture2D" uid="uid://f2npa1cmnr4e" path="res://assets/sprites/tv.png" id="1_rdp56"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pscqj"]
+size = Vector2(14, 16)
+
+[node name="TV" type="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_rdp56")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 3)
+shape = SubResource("RectangleShape2D_pscqj")

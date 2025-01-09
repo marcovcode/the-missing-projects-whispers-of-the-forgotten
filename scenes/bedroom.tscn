@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=4 uid="uid://bdi3kir8njn2y"]
+[gd_scene load_steps=14 format=4 uid="uid://bdi3kir8njn2y"]
 
 [ext_resource type="PackedScene" uid="uid://dujkru6akoqmu" path="res://scenes/charlotte.tscn" id="1_wrk0b"]
 [ext_resource type="Script" path="res://scripts/bedroom.gd" id="1_xop5t"]
@@ -8,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://co8vlmg8lxm5l" path="res://scenes/wardrobe.tscn" id="6_owm4t"]
 [ext_resource type="PackedScene" uid="uid://berrcvm7f067p" path="res://scenes/desk.tscn" id="7_17wvx"]
 [ext_resource type="PackedScene" uid="uid://cn63cxugq7rwl" path="res://scenes/basket.tscn" id="7_lflpr"]
+[ext_resource type="PackedScene" uid="uid://bt43j7nk2omba" path="res://scenes/tv.tscn" id="8_b48qk"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_17soo"]
 size = Vector2(16, 72)
@@ -74,9 +75,12 @@ position = Vector2(22, 98)
 rotation = 0.0050324
 
 [node name="Desk" parent="." instance=ExtResource("7_17wvx")]
-position = Vector2(80, 68)
+position = Vector2(80, 74)
 
 [node name="Diary" parent="Desk" instance=ExtResource("5_1xmca")]
+
+[node name="TV" parent="." instance=ExtResource("8_b48qk")]
+position = Vector2(56, 37)
 
 [node name="Charlotte" parent="." instance=ExtResource("1_wrk0b")]
 unique_name_in_owner = true
