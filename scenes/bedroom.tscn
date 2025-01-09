@@ -64,21 +64,20 @@ tile_map_data = PackedByteArray("AAACAAQAAAAAAAAAAAACAAUAAAAAAAAAAAACAAYAAAAAAAA
 tile_set = SubResource("TileSet_e5e40")
 
 [node name="Bed" parent="." instance=ExtResource("2_6ft0p")]
-position = Vector2(26, 40)
+position = Vector2(134, 40)
 
 [node name="Wardrobe" parent="." instance=ExtResource("6_owm4t")]
-position = Vector2(128, 32)
+position = Vector2(33, 33)
 
 [node name="Basket" parent="." instance=ExtResource("7_lflpr")]
-position = Vector2(23, 98)
+position = Vector2(22, 98)
 rotation = 0.0050324
 
 [node name="Desk" parent="." instance=ExtResource("7_17wvx")]
-position = Vector2(128, 92)
+position = Vector2(80, 68)
 
-[node name="Diary" parent="." instance=ExtResource("5_1xmca")]
-position = Vector2(128, 92)
+[node name="Diary" parent="Desk" instance=ExtResource("5_1xmca")]
 
 [node name="Charlotte" parent="." instance=ExtResource("1_wrk0b")]
 unique_name_in_owner = true
-position = Vector2(42, 36)
+position = Vector2(119, 39)
