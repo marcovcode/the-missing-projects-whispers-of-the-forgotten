@@ -1,8 +1,9 @@
-[gd_scene load_steps=15 format=4 uid="uid://bdi3kir8njn2y"]
+[gd_scene load_steps=16 format=4 uid="uid://bdi3kir8njn2y"]
 
 [ext_resource type="PackedScene" uid="uid://dujkru6akoqmu" path="res://scenes/charlotte.tscn" id="1_wrk0b"]
 [ext_resource type="Script" path="res://scripts/bedroom.gd" id="1_xop5t"]
 [ext_resource type="PackedScene" uid="uid://bi0ymuhevvcob" path="res://scenes/bed.tscn" id="2_6ft0p"]
+[ext_resource type="PackedScene" uid="uid://cuisp064os41d" path="res://scenes/crt_effect.tscn" id="2_rgjho"]
 [ext_resource type="Texture2D" uid="uid://dnarvtiu25r67" path="res://assets/sprites/floor.png" id="2_th15h"]
 [ext_resource type="PackedScene" uid="uid://dxh5tt3owbnqm" path="res://scenes/diary.tscn" id="5_1xmca"]
 [ext_resource type="PackedScene" uid="uid://co8vlmg8lxm5l" path="res://scenes/wardrobe.tscn" id="6_owm4t"]
@@ -30,6 +31,8 @@ sources/0 = SubResource("TileSetAtlasSource_svy5q")
 y_sort_enabled = true
 script = ExtResource("1_xop5t")
 
+[node name="CRTEffect" parent="." instance=ExtResource("2_rgjho")]
+
 [node name="Boundaries" type="Node2D" parent="."]
 
 [node name="Left" type="StaticBody2D" parent="Boundaries"]
@@ -56,36 +59,39 @@ shape = SubResource("RectangleShape2D_fln54")
 position = Vector2(80, 24)
 shape = SubResource("RectangleShape2D_fln54")
 
-[node name="Walls" type="ColorRect" parent="."]
+[node name="Environment" type="Node2D" parent="."]
+y_sort_enabled = true
+
+[node name="Walls" type="ColorRect" parent="Environment"]
 offset_right = 160.0
 offset_bottom = 120.0
 color = Color(0.635294, 0.533333, 0.831373, 1)
 
-[node name="Floor" type="TileMapLayer" parent="."]
+[node name="Floor" type="TileMapLayer" parent="Environment"]
 tile_map_data = PackedByteArray("AAACAAQAAAAAAAAAAAACAAUAAAAAAAAAAAACAAYAAAAAAAAAAAACAAcAAAAAAAAAAAACAAgAAAAAAAAAAAACAAkAAAAAAAAAAAACAAoAAAAAAAAAAAACAAsAAAAAAAAAAAACAAwAAAAAAAAAAAADAAQAAAAAAAAAAAADAAUAAAAAAAAAAAADAAYAAAAAAAAAAAADAAcAAAAAAAAAAAADAAgAAAAAAAAAAAADAAkAAAAAAAAAAAADAAoAAAAAAAAAAAADAAsAAAAAAAAAAAADAAwAAAAAAAAAAAAEAAQAAAAAAAAAAAAEAAUAAAAAAAAAAAAEAAYAAAAAAAAAAAAEAAcAAAAAAAAAAAAEAAgAAAAAAAAAAAAEAAkAAAAAAAAAAAAEAAoAAAAAAAAAAAAEAAsAAAAAAAAAAAAEAAwAAAAAAAAAAAAFAAQAAAAAAAAAAAAFAAUAAAAAAAAAAAAFAAYAAAAAAAAAAAAFAAcAAAAAAAAAAAAFAAgAAAAAAAAAAAAFAAkAAAAAAAAAAAAFAAoAAAAAAAAAAAAFAAsAAAAAAAAAAAAFAAwAAAAAAAAAAAAGAAQAAAAAAAAAAAAGAAUAAAAAAAAAAAAGAAYAAAAAAAAAAAAGAAcAAAAAAAAAAAAGAAgAAAAAAAAAAAAGAAkAAAAAAAAAAAAGAAoAAAAAAAAAAAAGAAsAAAAAAAAAAAAGAAwAAAAAAAAAAAAHAAQAAAAAAAAAAAAHAAUAAAAAAAAAAAAHAAYAAAAAAAAAAAAHAAcAAAAAAAAAAAAHAAgAAAAAAAAAAAAHAAkAAAAAAAAAAAAHAAoAAAAAAAAAAAAHAAsAAAAAAAAAAAAHAAwAAAAAAAAAAAAIAAQAAAAAAAAAAAAIAAUAAAAAAAAAAAAIAAYAAAAAAAAAAAAIAAcAAAAAAAAAAAAIAAgAAAAAAAAAAAAIAAkAAAAAAAAAAAAIAAoAAAAAAAAAAAAIAAsAAAAAAAAAAAAIAAwAAAAAAAAAAAAJAAQAAAAAAAAAAAAJAAUAAAAAAAAAAAAJAAYAAAAAAAAAAAAJAAcAAAAAAAAAAAAJAAgAAAAAAAAAAAAJAAkAAAAAAAAAAAAJAAoAAAAAAAAAAAAJAAsAAAAAAAAAAAAJAAwAAAAAAAAAAAAKAAQAAAAAAAAAAAAKAAUAAAAAAAAAAAAKAAYAAAAAAAAAAAAKAAcAAAAAAAAAAAAKAAgAAAAAAAAAAAAKAAkAAAAAAAAAAAAKAAoAAAAAAAAAAAAKAAsAAAAAAAAAAAAKAAwAAAAAAAAAAAALAAQAAAAAAAAAAAALAAUAAAAAAAAAAAALAAYAAAAAAAAAAAALAAcAAAAAAAAAAAALAAgAAAAAAAAAAAALAAkAAAAAAAAAAAALAAoAAAAAAAAAAAALAAsAAAAAAAAAAAALAAwAAAAAAAAAAAAMAAQAAAAAAAAAAAAMAAUAAAAAAAAAAAAMAAYAAAAAAAAAAAAMAAcAAAAAAAAAAAAMAAgAAAAAAAAAAAAMAAkAAAAAAAAAAAAMAAoAAAAAAAAAAAAMAAsAAAAAAAAAAAAMAAwAAAAAAAAAAAANAAQAAAAAAAAAAAANAAUAAAAAAAAAAAANAAYAAAAAAAAAAAANAAcAAAAAAAAAAAANAAgAAAAAAAAAAAANAAkAAAAAAAAAAAANAAoAAAAAAAAAAAANAAsAAAAAAAAAAAANAAwAAAAAAAAAAAAOAAQAAAAAAAAAAAAOAAUAAAAAAAAAAAAOAAYAAAAAAAAAAAAOAAcAAAAAAAAAAAAOAAgAAAAAAAAAAAAOAAkAAAAAAAAAAAAOAAoAAAAAAAAAAAAOAAsAAAAAAAAAAAAOAAwAAAAAAAAAAAAPAAQAAAAAAAAAAAAPAAUAAAAAAAAAAAAPAAYAAAAAAAAAAAAPAAcAAAAAAAAAAAAPAAgAAAAAAAAAAAAPAAkAAAAAAAAAAAAPAAoAAAAAAAAAAAAPAAsAAAAAAAAAAAAPAAwAAAAAAAAAAAAQAAQAAAAAAAAAAAAQAAUAAAAAAAAAAAAQAAYAAAAAAAAAAAAQAAcAAAAAAAAAAAAQAAgAAAAAAAAAAAAQAAkAAAAAAAAAAAAQAAoAAAAAAAAAAAAQAAsAAAAAAAAAAAAQAAwAAAAAAAAAAAARAAQAAAAAAAAAAAARAAUAAAAAAAAAAAARAAYAAAAAAAAAAAARAAcAAAAAAAAAAAARAAgAAAAAAAAAAAARAAkAAAAAAAAAAAARAAoAAAAAAAAAAAARAAsAAAAAAAAAAAARAAwAAAAAAAAAAAA=")
 tile_set = SubResource("TileSet_e5e40")
 
-[node name="Bed" parent="." instance=ExtResource("2_6ft0p")]
+[node name="Bed" parent="Environment" instance=ExtResource("2_6ft0p")]
 position = Vector2(134, 40)
 
-[node name="Wardrobe" parent="." instance=ExtResource("6_owm4t")]
+[node name="Wardrobe" parent="Environment" instance=ExtResource("6_owm4t")]
 position = Vector2(33, 27)
 
-[node name="Basket" parent="." instance=ExtResource("7_lflpr")]
+[node name="Basket" parent="Environment" instance=ExtResource("7_lflpr")]
 position = Vector2(22, 98)
 rotation = 0.0050324
 
-[node name="Desk" parent="." instance=ExtResource("7_17wvx")]
+[node name="Desk" parent="Environment" instance=ExtResource("7_17wvx")]
 position = Vector2(80, 74)
 
-[node name="Diary" parent="Desk" instance=ExtResource("5_1xmca")]
+[node name="Diary" parent="Environment/Desk" instance=ExtResource("5_1xmca")]
 
-[node name="TV" parent="." instance=ExtResource("8_b48qk")]
+[node name="TV" parent="Environment" instance=ExtResource("8_b48qk")]
 position = Vector2(56, 37)
+
+[node name="NightTable" parent="Environment" instance=ExtResource("10_85mtb")]
+position = Vector2(118, 36)
 
 [node name="Charlotte" parent="." instance=ExtResource("1_wrk0b")]
 unique_name_in_owner = true
 position = Vector2(119, 47)
-
-[node name="NightTable" parent="." instance=ExtResource("10_85mtb")]
-position = Vector2(118, 36)
