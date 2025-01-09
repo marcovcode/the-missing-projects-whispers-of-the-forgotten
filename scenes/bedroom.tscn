@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=4 uid="uid://bdi3kir8njn2y"]
+[gd_scene load_steps=15 format=4 uid="uid://bdi3kir8njn2y"]
 
 [ext_resource type="PackedScene" uid="uid://dujkru6akoqmu" path="res://scenes/charlotte.tscn" id="1_wrk0b"]
 [ext_resource type="Script" path="res://scripts/bedroom.gd" id="1_xop5t"]
@@ -9,6 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://berrcvm7f067p" path="res://scenes/desk.tscn" id="7_17wvx"]
 [ext_resource type="PackedScene" uid="uid://cn63cxugq7rwl" path="res://scenes/basket.tscn" id="7_lflpr"]
 [ext_resource type="PackedScene" uid="uid://bt43j7nk2omba" path="res://scenes/tv.tscn" id="8_b48qk"]
+[ext_resource type="PackedScene" uid="uid://cko5p5sd5vasi" path="res://scenes/night_table.tscn" id="10_85mtb"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_17soo"]
 size = Vector2(16, 72)
@@ -84,4 +85,7 @@ position = Vector2(56, 37)
 
 [node name="Charlotte" parent="." instance=ExtResource("1_wrk0b")]
 unique_name_in_owner = true
-position = Vector2(119, 39)
+position = Vector2(119, 47)
+
+[node name="StaticBody2D" parent="." instance=ExtResource("10_85mtb")]
+position = Vector2(118, 36)
