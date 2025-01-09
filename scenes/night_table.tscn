@@ -5,7 +5,7 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_h1a2l"]
 size = Vector2(12, 11)
 
-[node name="StaticBody2D" type="StaticBody2D"]
+[node name="NightTable" type="StaticBody2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_xkkve")
