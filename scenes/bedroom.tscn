@@ -69,7 +69,7 @@ tile_set = SubResource("TileSet_e5e40")
 position = Vector2(134, 40)
 
 [node name="Wardrobe" parent="." instance=ExtResource("6_owm4t")]
-position = Vector2(33, 33)
+position = Vector2(33, 27)
 
 [node name="Basket" parent="." instance=ExtResource("7_lflpr")]
 position = Vector2(22, 98)
