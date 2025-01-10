@@ -32,6 +32,7 @@ y_sort_enabled = true
 script = ExtResource("1_xop5t")
 
 [node name="CRTEffect" parent="." instance=ExtResource("2_rgjho")]
+layer = 128
 
 [node name="Boundaries" type="Node2D" parent="."]
 
