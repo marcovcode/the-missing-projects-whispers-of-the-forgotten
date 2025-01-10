@@ -43,15 +43,25 @@ func move(input_direction):
     velocity = input_direction * speed
     move_and_slide()
     
-func animate():
-    if not can_interact or is_transitioning:
-        animated_sprite.play("idle")
-        return
-
-    if velocity.length() > 0:
-        animated_sprite.play("walk")
-    else:
-        animated_sprite.play("idle")
+func animate(input_direction):
+    if input_direction.x < 0:
+        animated_sprite.flip_h = false
+        animated_sprite.play("walk_left")
+    elif input_direction.x > 0:
+        animated_sprite.play("walk_left")
+        animated_sprite.flip_h = true
+    elif input_direction.y < 0:
+        animated_sprite.play("walk_up")
+    elif input_direction.y > 0:
+        animated_sprite.play("walk_down")
+    
+    if velocity == Vector2.ZERO:
+        if animated_sprite.animation in ["walk_up", "walk_down"]:
+            animated_sprite.stop()
+            animated_sprite.frame = 1
+        else:
+            animated_sprite.stop()
+            animated_sprite.frame = 0
 
 func rotate_raycast(input_direction):
     if input_direction.x < 0:
@@ -72,5 +82,5 @@ func _physics_process(delta):
     var input_direction = get_input()
     move(input_direction)
     rotate_raycast(input_direction)
+    animate(input_direction)
     save_position()
-    animate()
