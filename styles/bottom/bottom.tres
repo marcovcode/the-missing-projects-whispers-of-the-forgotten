@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="DialogicStyle" load_steps=5 format=3 uid="uid://bmpb41tr5hrtt"]
+
+[ext_resource type="PackedScene" uid="uid://g3er0exnsn5n" path="res://styles/bottom/CustomBottom/custom_bottom.tscn" id="1_djggi"]
+[ext_resource type="Script" path="res://addons/dialogic/Resources/dialogic_style_layer.gd" id="2_gxtje"]
+[ext_resource type="Script" path="res://addons/dialogic/Resources/dialogic_style.gd" id="3_gob3m"]
+
+[sub_resource type="Resource" id="Resource_h636v"]
+script = ExtResource("2_gxtje")
+scene = ExtResource("1_djggi")
+overrides = {}
+
+[resource]
+script = ExtResource("3_gob3m")
+name = "bottom"
+layer_list = Array[String]([])
+layer_info = {
+"": SubResource("Resource_h636v")
+}
+base_overrides = {}
+layers = Array[ExtResource("2_gxtje")]([])
+metadata/_latest_layer = ""

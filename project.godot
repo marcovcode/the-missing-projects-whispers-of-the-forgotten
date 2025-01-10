@@ -43,8 +43,8 @@ directories/dtl_directory={
 "theres_only_trash": "res://timelines/theres_only_trash.dtl",
 "woke_up": "res://timelines/woke_up.dtl"
 }
-layout/style_list=["res://styles/top/top.tres", "res://styles/reference/reference.tres", "res://styles/full_screen/full_screen.tres"]
-layout/default_style="res://styles/top/top.tres"
+layout/style_list=["res://styles/reference/reference.tres", "res://styles/full_screen/full_screen.tres", "res://styles/bottom/bottom.tres"]
+layout/default_style="res://styles/bottom/bottom.tres"
 variables={
 "diary_code": "1234",
 "inserted_diary_code": "0"
