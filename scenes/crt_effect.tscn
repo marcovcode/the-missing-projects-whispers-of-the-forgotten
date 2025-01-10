@@ -20,6 +20,7 @@ shader_parameter/scan_line_strength = -8.0
 shader_parameter/pixel_strength = -2.0
 
 [node name="CRTEffect" type="CanvasLayer"]
+layer = 128
 
 [node name="ColorRect" type="ColorRect" parent="."]
 material = SubResource("ShaderMaterial_tlnko")
