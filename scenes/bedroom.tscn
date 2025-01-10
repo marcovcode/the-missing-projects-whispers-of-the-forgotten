@@ -84,7 +84,7 @@ rotation = 0.0050324
 [node name="Desk" parent="Environment" instance=ExtResource("7_17wvx")]
 position = Vector2(80, 74)
 
-[node name="Diary" parent="Environment/Desk" instance=ExtResource("5_1xmca")]
+[node name="Diary" parent="Environment/Desk" groups=["interactables"] instance=ExtResource("5_1xmca")]
 
 [node name="TV" parent="Environment" instance=ExtResource("8_b48qk")]
 position = Vector2(56, 37)
