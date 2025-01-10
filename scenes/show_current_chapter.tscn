@@ -1,11 +1,14 @@
-[gd_scene load_steps=2 format=3 uid="uid://wv7vefjnkaph"]
+[gd_scene load_steps=3 format=3 uid="uid://wv7vefjnkaph"]
 
 [ext_resource type="Script" path="res://scripts/show_current_chapter.gd" id="1_avk41"]
+[ext_resource type="PackedScene" uid="uid://cuisp064os41d" path="res://scenes/crt_effect.tscn" id="2_eks5o"]
 
 [node name="ShowCurrentChapter" type="Node2D"]
 script = ExtResource("1_avk41")
 
+[node name="CRTEffect" parent="." instance=ExtResource("2_eks5o")]
+
 [node name="ColorRect" type="ColorRect" parent="."]
 offset_right = 160.0
 offset_bottom = 120.0
-color = Color(0, 0, 0, 1)
+color = Color(0.235294, 0.133333, 0.431373, 1)
