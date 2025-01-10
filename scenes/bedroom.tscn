@@ -78,7 +78,7 @@ position = Vector2(134, 40)
 position = Vector2(33, 27)
 
 [node name="Basket" parent="Environment" instance=ExtResource("7_lflpr")]
-position = Vector2(22, 98)
+position = Vector2(23, 98)
 rotation = 0.0050324
 
 [node name="Desk" parent="Environment" instance=ExtResource("7_17wvx")]
