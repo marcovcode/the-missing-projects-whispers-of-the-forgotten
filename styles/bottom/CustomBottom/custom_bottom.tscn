@@ -11,28 +11,28 @@ content_margin_left = 5.0
 content_margin_top = 5.0
 content_margin_right = 5.0
 content_margin_bottom = 5.0
-bg_color = Color(0, 0, 0, 1)
+bg_color = Color(0.435294, 0.333333, 0.631373, 1)
 border_width_left = 1
 border_width_top = 1
 border_width_right = 1
 border_width_bottom = 1
-border_color = Color(1, 1, 1, 1)
+border_color = Color(0.235294, 0.133333, 0.431373, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_b7gcn"]
-bg_color = Color(0, 0, 0, 1)
+bg_color = Color(0.435294, 0.333333, 0.631373, 1)
 border_width_left = 1
 border_width_top = 1
 border_width_right = 1
 border_width_bottom = 1
-border_color = Color(1, 1, 1, 1)
+border_color = Color(0.235294, 0.133333, 0.431373, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tg5i0"]
-bg_color = Color(0, 0, 0, 1)
+bg_color = Color(0.435294, 0.333333, 0.631373, 1)
 border_width_left = 1
 border_width_top = 1
 border_width_right = 1
 border_width_bottom = 1
-border_color = Color(1, 1, 1, 1)
+border_color = Color(0.235294, 0.133333, 0.431373, 1)
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_e1wql"]
 
@@ -54,7 +54,7 @@ anchor_left = 0.125
 anchor_top = 2.0
 anchor_right = 3.875
 anchor_bottom = 2.875
-offset_right = -1.52588e-05
+offset_right = -3.05176e-05
 grow_horizontal = 2
 grow_vertical = 0
 size_flags_vertical = 0
@@ -64,7 +64,7 @@ theme_override_styles/panel = SubResource("StyleBoxFlat_aynu0")
 unique_name_in_owner = true
 layout_mode = 2
 mouse_filter = 1
-theme_override_colors/default_color = Color(1, 1, 1, 1)
+theme_override_colors/default_color = Color(0.831373, 0.745098, 1, 1)
 theme_override_fonts/normal_font = ExtResource("2_030jl")
 theme_override_font_sizes/bold_italics_font_size = 15
 theme_override_font_sizes/italics_font_size = 15
@@ -89,7 +89,7 @@ theme_override_styles/panel = SubResource("StyleBoxFlat_b7gcn")
 [node name="DialogicNode_NameLabel" type="Label" parent="DialogueBox/CharacterName"]
 unique_name_in_owner = true
 layout_mode = 2
-theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_color = Color(0.831373, 0.745098, 1, 1)
 theme_override_fonts/font = ExtResource("2_030jl")
 theme_override_font_sizes/font_size = 8
 text = "Name"
@@ -126,7 +126,8 @@ layout_mode = 2
 offset_left = 3.0
 offset_right = 49.0
 offset_bottom = 18.0
-theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_placeholder_color = Color(0.635294, 0.533333, 0.831373, 1)
+theme_override_colors/font_color = Color(0.831373, 0.745098, 1, 1)
 theme_override_fonts/font = ExtResource("2_030jl")
 theme_override_font_sizes/font_size = 8
 theme_override_styles/focus = SubResource("StyleBoxEmpty_e1wql")
