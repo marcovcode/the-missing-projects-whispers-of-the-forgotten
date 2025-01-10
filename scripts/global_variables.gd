@@ -6,8 +6,8 @@ var is_transitioning = false
 
 var game_state = {
     "charlotte": {
-        "x": 30,
-        "y": 93
+        "x": 118,
+        "y": 45
     },
 
     "story_progress": {
