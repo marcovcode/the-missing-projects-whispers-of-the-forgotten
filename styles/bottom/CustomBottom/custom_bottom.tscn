@@ -6,7 +6,7 @@
 [ext_resource type="Script" path="res://addons/dialogic/Modules/Text/node_type_sound.gd" id="4_6ngo8"]
 [ext_resource type="Script" path="res://addons/dialogic/Modules/Text/node_name_label.gd" id="4_jiqr4"]
 [ext_resource type="Script" path="res://addons/dialogic/Modules/TextInput/node_text_input.gd" id="4_ryavl"]
-[ext_resource type="AudioStream" uid="uid://c88t27udqwwoa" path="res://assets/sounds/speak.wav" id="5_0jium"]
+[ext_resource type="AudioStream" uid="uid://b3kjo7orqsjfg" path="res://assets/sounds/charlotte_voice.wav" id="5_4bpar"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_aynu0"]
 content_margin_left = 5.0
@@ -81,7 +81,7 @@ script = ExtResource("2_r8w4t")
 [node name="DialogicNode_TypeSounds" type="AudioStreamPlayer" parent="DialogueBox/TextBox/DialogicNode_DialogText"]
 unique_name_in_owner = true
 script = ExtResource("4_6ngo8")
-sounds = Array[AudioStream]([ExtResource("5_0jium")])
+sounds = Array[AudioStream]([ExtResource("5_4bpar")])
 play_every_character = 0
 
 [node name="CharacterName" type="PanelContainer" parent="DialogueBox"]

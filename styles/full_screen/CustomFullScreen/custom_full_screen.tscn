@@ -1,9 +1,10 @@
-[gd_scene load_steps=6 format=3 uid="uid://db3x3n68jpitv"]
+[gd_scene load_steps=7 format=3 uid="uid://db3x3n68jpitv"]
 
 [ext_resource type="Script" path="res://styles/full_screen/CustomFullScreen/default_layout_base.gd" id="1_ifsho"]
 [ext_resource type="Script" path="res://addons/dialogic/Modules/Text/node_dialog_text.gd" id="2_6y7gp"]
 [ext_resource type="FontFile" uid="uid://sdkkg07xuqar" path="res://fonts/04B_03.ttf" id="2_vt5kw"]
 [ext_resource type="Script" path="res://addons/dialogic/Modules/Text/node_type_sound.gd" id="3_r3nme"]
+[ext_resource type="AudioStream" uid="uid://7xhmyljqx6a5" path="res://assets/sounds/typing.wav" id="5_ppbme"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_h0rfj"]
 content_margin_left = 15.0
@@ -41,4 +42,5 @@ alignment = 1
 [node name="DialogicNode_TypeSounds" type="AudioStreamPlayer" parent="PanelContainer/DialogicNode_DialogText"]
 unique_name_in_owner = true
 script = ExtResource("3_r3nme")
+sounds = Array[AudioStream]([ExtResource("5_ppbme")])
 play_every_character = 0
