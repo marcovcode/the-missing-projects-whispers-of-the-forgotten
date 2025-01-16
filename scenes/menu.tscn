@@ -1,7 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://dfa42lvg62j3o"]
+[gd_scene load_steps=8 format=3 uid="uid://dfa42lvg62j3o"]
 
 [ext_resource type="PackedScene" uid="uid://cuisp064os41d" path="res://scenes/crt_effect.tscn" id="1_4kbc5"]
 [ext_resource type="FontFile" uid="uid://sdkkg07xuqar" path="res://fonts/04B_03.ttf" id="1_ajaj6"]
+[ext_resource type="Script" path="res://scripts/start.gd" id="2_gol26"]
+[ext_resource type="Script" path="res://scripts/quit.gd" id="3_0mpch"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_a7f6h"]
 bg_color = Color(0.6, 0.6, 0.6, 0)
@@ -70,6 +72,7 @@ theme_override_styles/hover = SubResource("StyleBoxFlat_vkq5i")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_a7f6h")
 theme_override_styles/normal = SubResource("StyleBoxFlat_ntujm")
 text = "Start"
+script = ExtResource("2_gol26")
 
 [node name="Quit" type="Button" parent="."]
 offset_left = 84.0
@@ -87,5 +90,7 @@ theme_override_styles/hover = SubResource("StyleBoxFlat_vkq5i")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_a7f6h")
 theme_override_styles/normal = SubResource("StyleBoxFlat_ntujm")
 text = "Quit"
+script = ExtResource("3_0mpch")
 
 [node name="CRTEffect" parent="." instance=ExtResource("1_4kbc5")]
+visible = false
