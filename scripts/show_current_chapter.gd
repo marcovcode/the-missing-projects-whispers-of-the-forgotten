@@ -1,5 +1,7 @@
 extends Node2D
 
+var story_progress:
+    get: return GlobalVariables.game_state["story_progress"]
 var current_chapter:
     get: return GlobalVariables.game_state["story_progress"]["current_chapter"]
 
@@ -18,3 +20,5 @@ func _ready():
     Dialogic.timeline_ended.connect(_on_timeline_ended)
 
     Dialogic.start(current_chapter)
+
+    story_progress[current_chapter]["has_shown_chapter_name"] = true

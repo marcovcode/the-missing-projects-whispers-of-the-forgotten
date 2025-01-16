@@ -14,6 +14,7 @@ var game_state = {
         "current_chapter": "a_day_in_december",
 
         "a_day_in_december": {
+            "has_shown_chapter_name": false,
             "has_shown_woke_up": false,
             "has_checked_diary": false,
             "has_found_basket_piece": false,
