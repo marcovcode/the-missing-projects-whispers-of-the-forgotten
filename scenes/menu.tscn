@@ -1,27 +1,78 @@
-[gd_scene load_steps=8 format=3 uid="uid://dfa42lvg62j3o"]
+[gd_scene load_steps=16 format=3 uid="uid://dfa42lvg62j3o"]
 
 [ext_resource type="PackedScene" uid="uid://cuisp064os41d" path="res://scenes/crt_effect.tscn" id="1_4kbc5"]
 [ext_resource type="FontFile" uid="uid://sdkkg07xuqar" path="res://fonts/04B_03.ttf" id="1_ajaj6"]
 [ext_resource type="Script" path="res://scripts/start.gd" id="2_gol26"]
+[ext_resource type="Texture2D" uid="uid://o7p0oaj0y40l" path="res://assets/sprites/menu-background.png" id="2_jj71b"]
 [ext_resource type="Script" path="res://scripts/quit.gd" id="3_0mpch"]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_a7f6h"]
-bg_color = Color(0.6, 0.6, 0.6, 0)
-border_width_left = 1
-border_width_top = 1
-border_width_right = 1
-border_width_bottom = 1
-border_color = Color(0.831373, 0.745098, 1, 1)
+[sub_resource type="AtlasTexture" id="AtlasTexture_js26c"]
+atlas = ExtResource("2_jj71b")
+region = Rect2(0, 0, 160, 120)
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vkq5i"]
-bg_color = Color(0.6, 0.6, 0.6, 0)
-border_width_left = 1
-border_width_top = 1
-border_width_right = 1
-border_width_bottom = 1
-border_color = Color(0.831373, 0.745098, 1, 1)
+[sub_resource type="AtlasTexture" id="AtlasTexture_p2yvc"]
+atlas = ExtResource("2_jj71b")
+region = Rect2(161, 0, 160, 120)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_db0ce"]
+atlas = ExtResource("2_jj71b")
+region = Rect2(322, 0, 160, 120)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hr32t"]
+atlas = ExtResource("2_jj71b")
+region = Rect2(483, 0, 160, 120)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gf2jj"]
+atlas = ExtResource("2_jj71b")
+region = Rect2(644, 0, 160, 120)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_je78r"]
+atlas = ExtResource("2_jj71b")
+region = Rect2(805, 0, 160, 120)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_1lbmi"]
+animations = [{
+"frames": [{
+"duration": 4.0,
+"texture": SubResource("AtlasTexture_js26c")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_p2yvc")
+}, {
+"duration": 0.5,
+"texture": SubResource("AtlasTexture_db0ce")
+}, {
+"duration": 0.3,
+"texture": SubResource("AtlasTexture_hr32t")
+}, {
+"duration": 0.1,
+"texture": SubResource("AtlasTexture_gf2jj")
+}, {
+"duration": 0.2,
+"texture": SubResource("AtlasTexture_je78r")
+}],
+"loop": true,
+"name": &"default",
+"speed": 1.0
+}]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ntujm"]
+bg_color = Color(0.237145, 0.1333, 0.43, 0)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.635294, 0.533333, 0.831373, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vkq5i"]
+bg_color = Color(0.237145, 0.1333, 0.43, 0)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.831373, 0.745098, 1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_a7f6h"]
 bg_color = Color(0.6, 0.6, 0.6, 0)
 border_width_left = 1
 border_width_top = 1
@@ -33,16 +84,23 @@ border_color = Color(0.635294, 0.533333, 0.831373, 1)
 
 [node name="CRTEffect" parent="." instance=ExtResource("1_4kbc5")]
 
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(80, 60)
+sprite_frames = SubResource("SpriteFrames_1lbmi")
+autoplay = "default"
+frame = 2
+frame_progress = 0.334798
+
 [node name="ColorRect" type="ColorRect" parent="."]
 offset_right = 160.0
 offset_bottom = 120.0
-color = Color(0.235294, 0.133333, 0.431373, 1)
+color = Color(0, 0, 0, 0.784314)
 
 [node name="Label" type="Label" parent="."]
 offset_top = 39.0
 offset_right = 160.0
 offset_bottom = 47.0
-theme_override_colors/font_color = Color(0.635294, 0.533333, 0.831373, 1)
+theme_override_colors/font_color = Color(0.831373, 0.745098, 1, 1)
 theme_override_fonts/font = ExtResource("1_ajaj6")
 theme_override_font_sizes/font_size = 8
 text = "The Missing Projects:"
@@ -69,9 +127,9 @@ theme_override_colors/font_focus_color = Color(0.831373, 0.745098, 1, 1)
 theme_override_colors/font_color = Color(0.635294, 0.533333, 0.831373, 1)
 theme_override_fonts/font = ExtResource("1_ajaj6")
 theme_override_font_sizes/font_size = 8
-theme_override_styles/focus = SubResource("StyleBoxFlat_a7f6h")
+theme_override_styles/focus = SubResource("StyleBoxFlat_ntujm")
 theme_override_styles/hover = SubResource("StyleBoxFlat_vkq5i")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_a7f6h")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_ntujm")
 theme_override_styles/normal = SubResource("StyleBoxFlat_ntujm")
 text = "Start"
 script = ExtResource("2_gol26")
@@ -89,7 +147,7 @@ theme_override_fonts/font = ExtResource("1_ajaj6")
 theme_override_font_sizes/font_size = 8
 theme_override_styles/focus = SubResource("StyleBoxFlat_a7f6h")
 theme_override_styles/hover = SubResource("StyleBoxFlat_vkq5i")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_a7f6h")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_ntujm")
 theme_override_styles/normal = SubResource("StyleBoxFlat_ntujm")
 text = "Quit"
 script = ExtResource("3_0mpch")
