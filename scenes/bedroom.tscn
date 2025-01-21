@@ -95,3 +95,5 @@ position = Vector2(118, 36)
 [node name="Charlotte" parent="." instance=ExtResource("1_wrk0b")]
 unique_name_in_owner = true
 position = Vector2(118, 45)
+
+[node name="Song" type="AudioStreamPlayer" parent="."]

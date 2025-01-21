@@ -22,6 +22,7 @@ DialogueManager="*res://scripts/dialogue_manager.gd"
 Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 Transition="*res://scenes/transition.tscn"
 PostIt="*res://scripts/post_it.gd"
+MusicPlayer="*res://scripts/music_player.gd"
 
 [dialogic]
 
