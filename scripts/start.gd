@@ -9,7 +9,11 @@ func _ready():
     pressed.connect(_on_button_pressed)
 
 func _on_button_pressed():
+    var target_scene = "res://scenes/show_current_chapter.tscn"
+
     if story_progress[current_chapter]["has_shown_chapter_name"]:
-        get_tree().change_scene_to_file("res://scenes/bedroom.tscn")
-    else:
-        get_tree().change_scene_to_file("res://scenes/show_current_chapter.tscn")
+        target_scene = "res://scenes/bedroom.tscn"
+
+    Transition.transition()
+    await Transition.transition_finished
+    get_tree().change_scene_to_file(target_scene)
