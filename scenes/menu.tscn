@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://dfa42lvg62j3o"]
+[gd_scene load_steps=15 format=3 uid="uid://dfa42lvg62j3o"]
 
 [ext_resource type="PackedScene" uid="uid://cuisp064os41d" path="res://scenes/crt_effect.tscn" id="1_4kbc5"]
 [ext_resource type="FontFile" uid="uid://sdkkg07xuqar" path="res://assets/fonts/04B_03.ttf" id="1_ajaj6"]
@@ -56,14 +56,6 @@ animations = [{
 "speed": 1.0
 }]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ntujm"]
-bg_color = Color(0.237145, 0.1333, 0.43, 0)
-border_width_left = 1
-border_width_top = 1
-border_width_right = 1
-border_width_bottom = 1
-border_color = Color(0.635294, 0.533333, 0.831373, 1)
-
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vkq5i"]
 bg_color = Color(0.237145, 0.1333, 0.43, 0)
 border_width_left = 1
@@ -72,8 +64,8 @@ border_width_right = 1
 border_width_bottom = 1
 border_color = Color(0.831373, 0.745098, 1, 1)
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_a7f6h"]
-bg_color = Color(0.6, 0.6, 0.6, 0)
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ntujm"]
+bg_color = Color(0.237145, 0.1333, 0.43, 0)
 border_width_left = 1
 border_width_top = 1
 border_width_right = 1
@@ -128,7 +120,6 @@ theme_override_colors/font_focus_color = Color(0.831373, 0.745098, 1, 1)
 theme_override_colors/font_color = Color(0.635294, 0.533333, 0.831373, 1)
 theme_override_fonts/font = ExtResource("1_ajaj6")
 theme_override_font_sizes/font_size = 8
-theme_override_styles/focus = SubResource("StyleBoxFlat_ntujm")
 theme_override_styles/hover = SubResource("StyleBoxFlat_vkq5i")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_ntujm")
 theme_override_styles/normal = SubResource("StyleBoxFlat_ntujm")
@@ -147,7 +138,6 @@ theme_override_colors/font_focus_color = Color(0.831373, 0.745098, 1, 1)
 theme_override_colors/font_color = Color(0.635294, 0.533333, 0.831373, 1)
 theme_override_fonts/font = ExtResource("1_ajaj6")
 theme_override_font_sizes/font_size = 8
-theme_override_styles/focus = SubResource("StyleBoxFlat_a7f6h")
 theme_override_styles/hover = SubResource("StyleBoxFlat_vkq5i")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_ntujm")
 theme_override_styles/normal = SubResource("StyleBoxFlat_ntujm")
