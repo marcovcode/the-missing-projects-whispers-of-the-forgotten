@@ -1,0 +1,42 @@
+[gd_scene load_steps=6 format=3 uid="uid://b8alivgs72lxw"]
+
+[ext_resource type="FontFile" uid="uid://sdkkg07xuqar" path="res://assets/fonts/04B_03.ttf" id="1_cwjog"]
+[ext_resource type="AudioStream" path="res://assets/sounds/button_hover.wav" id="3_1lker"]
+[ext_resource type="AudioStream" path="res://assets/sounds/button_pressed.wav" id="4_x6gp5"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_n28g1"]
+bg_color = Color(0.237145, 0.1333, 0.43, 0)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.831373, 0.745098, 1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_q5f36"]
+bg_color = Color(0.237145, 0.1333, 0.43, 0)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.635294, 0.533333, 0.831373, 1)
+
+[node name="Button" type="Button"]
+offset_right = 44.0
+offset_bottom = 16.0
+focus_mode = 0
+theme_override_colors/font_hover_color = Color(0.831373, 0.745098, 1, 1)
+theme_override_colors/font_pressed_color = Color(0.831373, 0.745098, 1, 1)
+theme_override_colors/font_focus_color = Color(0.831373, 0.745098, 1, 1)
+theme_override_colors/font_color = Color(0.635294, 0.533333, 0.831373, 1)
+theme_override_fonts/font = ExtResource("1_cwjog")
+theme_override_font_sizes/font_size = 8
+theme_override_styles/hover = SubResource("StyleBoxFlat_n28g1")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_q5f36")
+theme_override_styles/normal = SubResource("StyleBoxFlat_q5f36")
+text = "Text"
+
+[node name="HoverSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_1lker")
+
+[node name="PressedSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_x6gp5")
