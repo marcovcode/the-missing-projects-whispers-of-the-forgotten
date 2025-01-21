@@ -1,7 +1,7 @@
 [gd_scene load_steps=13 format=3 uid="uid://g3er0exnsn5n"]
 
 [ext_resource type="Script" path="res://styles/bottom/CustomBottom/default_layout_base.gd" id="1_ifsho"]
-[ext_resource type="FontFile" uid="uid://sdkkg07xuqar" path="res://fonts/04B_03.ttf" id="2_030jl"]
+[ext_resource type="FontFile" uid="uid://sdkkg07xuqar" path="res://assets/fonts/04b_03.ttf" id="2_030jl"]
 [ext_resource type="Script" path="res://addons/dialogic/Modules/Text/node_dialog_text.gd" id="2_r8w4t"]
 [ext_resource type="Script" path="res://addons/dialogic/Modules/Text/node_type_sound.gd" id="4_6ngo8"]
 [ext_resource type="Script" path="res://addons/dialogic/Modules/Text/node_name_label.gd" id="4_jiqr4"]
