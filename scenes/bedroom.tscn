@@ -97,3 +97,4 @@ unique_name_in_owner = true
 position = Vector2(118, 45)
 
 [node name="Song" type="AudioStreamPlayer" parent="."]
+volume_db = -5.0
