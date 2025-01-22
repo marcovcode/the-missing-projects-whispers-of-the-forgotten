@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://d4lxehgw0g7wp"]
+[gd_scene load_steps=4 format=3 uid="uid://d4lxehgw0g7wp"]
 
 [ext_resource type="Script" path="res://scripts/show_diary_page.gd" id="1_jmow7"]
 [ext_resource type="PackedScene" uid="uid://cuisp064os41d" path="res://scenes/crt_effect.tscn" id="2_4cu3x"]
+[ext_resource type="AudioStream" uid="uid://boe0f8kbl5b27" path="res://assets/songs/show_diary_page.mp3" id="3_qw6gn"]
 
 [node name="ShowDiaryPage" type="Node2D"]
 script = ExtResource("1_jmow7")
@@ -12,3 +13,8 @@ script = ExtResource("1_jmow7")
 offset_right = 160.0
 offset_bottom = 120.0
 color = Color(0.235294, 0.133333, 0.431373, 1)
+
+[node name="Song" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_qw6gn")
+volume_db = -5.0
+autoplay = true
