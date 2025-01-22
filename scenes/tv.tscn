@@ -1,11 +1,13 @@
-[gd_scene load_steps=3 format=3 uid="uid://bt43j7nk2omba"]
+[gd_scene load_steps=4 format=3 uid="uid://bt43j7nk2omba"]
 
+[ext_resource type="Script" path="res://scripts/tv.gd" id="1_3agc5"]
 [ext_resource type="Texture2D" uid="uid://f2npa1cmnr4e" path="res://assets/sprites/tv.png" id="1_rdp56"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_pscqj"]
 size = Vector2(14, 16)
 
 [node name="TV" type="StaticBody2D"]
+script = ExtResource("1_3agc5")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_rdp56")
