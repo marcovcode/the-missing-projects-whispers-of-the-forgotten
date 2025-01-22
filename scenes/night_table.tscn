@@ -1,11 +1,13 @@
-[gd_scene load_steps=3 format=3 uid="uid://cko5p5sd5vasi"]
+[gd_scene load_steps=4 format=3 uid="uid://cko5p5sd5vasi"]
 
 [ext_resource type="Texture2D" uid="uid://dnedjh23v7fuj" path="res://assets/sprites/night_table.png" id="1_xkkve"]
+[ext_resource type="Script" path="res://scripts/night_table.gd" id="1_y1fvq"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_h1a2l"]
 size = Vector2(12, 11)
 
 [node name="NightTable" type="StaticBody2D"]
+script = ExtResource("1_y1fvq")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_xkkve")

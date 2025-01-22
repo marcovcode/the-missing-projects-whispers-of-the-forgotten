@@ -39,6 +39,7 @@ directories/dtl_directory={
 "game_saved": "res://timelines/game_saved.dtl",
 "insert_diary_code": "res://timelines/insert_diary_code.dtl",
 "just_clothes_in_wardrobe": "res://timelines/just_clothes_in_wardrobe.dtl",
+"night_table": "res://timelines/night_table.dtl",
 "should_find_post_it": "res://timelines/should_find_post_it.dtl",
 "the_amnesiac_dream": "res://timelines/the_amnesiac_dream.dtl",
 "theres_only_trash": "res://timelines/theres_only_trash.dtl",
