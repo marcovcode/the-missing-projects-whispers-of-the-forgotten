@@ -30,6 +30,7 @@ directories/dch_directory={
 }
 directories/dtl_directory={
 "a_day_in_december": "res://timelines/a_day_in_december.dtl",
+"a_week_later": "res://timelines/a_week_later.dtl",
 "figures_out_diary_code": "res://timelines/figures_out_diary_code.dtl",
 "forgot_diary_code": "res://timelines/forgot_diary_code.dtl",
 "found_basket_piece": "res://timelines/found_basket_piece.dtl",
