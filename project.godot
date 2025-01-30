@@ -40,6 +40,7 @@ directories/dtl_directory={
 "game_saved": "res://timelines/game_saved.dtl",
 "insert_diary_code": "res://timelines/insert_diary_code.dtl",
 "just_clothes_in_wardrobe": "res://timelines/just_clothes_in_wardrobe.dtl",
+"music_box_song": "res://timelines/music_box_song.dtl",
 "night_table": "res://timelines/night_table.dtl",
 "old_tv": "res://timelines/old_tv.dtl",
 "returned_home_from_school": "res://timelines/returned_home_from_school.dtl",

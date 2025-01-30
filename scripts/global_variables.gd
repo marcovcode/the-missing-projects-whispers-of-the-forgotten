@@ -27,6 +27,7 @@ var game_state = {
             "has_shown_chapter_name": false,
             "has_shown_returned_home": false,
             "has_seen_colors": false,
+            "has_listened_to_song": false,
         }
     }
 }

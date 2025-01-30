@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://loj2gk27kwvr"]
+[gd_scene load_steps=5 format=3 uid="uid://loj2gk27kwvr"]
 
 [ext_resource type="Texture2D" uid="uid://bfswcpdw6earo" path="res://assets/sprites/music_box.png" id="1_2ipyq"]
 [ext_resource type="Script" path="res://scripts/music_box.gd" id="1_2khr0"]
+[ext_resource type="AudioStream" uid="uid://d2dibuw8lksk8" path="res://assets/songs/music_box.mp3" id="3_vi4th"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2m5lr"]
 size = Vector2(8, 6)
@@ -15,3 +16,7 @@ texture = ExtResource("1_2ipyq")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, 1)
 shape = SubResource("RectangleShape2D_2m5lr")
+
+[node name="Song" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_vi4th")
+volume_db = -5.0
