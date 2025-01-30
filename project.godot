@@ -32,6 +32,7 @@ directories/dtl_directory={
 "a_day_in_december": "res://timelines/a_day_in_december.dtl",
 "a_week_later": "res://timelines/a_week_later.dtl",
 "figures_out_diary_code": "res://timelines/figures_out_diary_code.dtl",
+"flashing_colors": "res://timelines/flashing_colors.dtl",
 "forgot_diary_code": "res://timelines/forgot_diary_code.dtl",
 "found_basket_piece": "res://timelines/found_basket_piece.dtl",
 "found_bed_piece": "res://timelines/found_bed_piece.dtl",
@@ -40,12 +41,12 @@ directories/dtl_directory={
 "insert_diary_code": "res://timelines/insert_diary_code.dtl",
 "just_clothes_in_wardrobe": "res://timelines/just_clothes_in_wardrobe.dtl",
 "night_table": "res://timelines/night_table.dtl",
+"old_tv": "res://timelines/old_tv.dtl",
 "returned_home_from_school": "res://timelines/returned_home_from_school.dtl",
 "should_find_post_it": "res://timelines/should_find_post_it.dtl",
 "simple_music_box": "res://timelines/simple_music_box.dtl",
 "the_amnesiac_dream": "res://timelines/the_amnesiac_dream.dtl",
 "theres_only_trash": "res://timelines/theres_only_trash.dtl",
-"tv": "res://timelines/tv.dtl",
 "woke_up": "res://timelines/woke_up.dtl"
 }
 layout/style_list=["res://styles/reference/reference.tres", "res://styles/full_screen/full_screen.tres", "res://styles/bottom/bottom.tres"]
