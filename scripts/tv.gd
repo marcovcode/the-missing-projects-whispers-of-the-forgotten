@@ -16,3 +16,5 @@ func _physics_process(delta):
             if current_chapter == "a_week_later":
                 Dialogic.start("flashing_colors")
                 has_seen_colors = true
+            else:
+                Dialogic.start("old_tv")
