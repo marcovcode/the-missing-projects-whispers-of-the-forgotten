@@ -25,6 +25,7 @@ var game_state = {
 
         "a_week_later": {
             "has_shown_chapter_name": false,
+            "has_shown_returned_home": false,
         }
     }
 }
