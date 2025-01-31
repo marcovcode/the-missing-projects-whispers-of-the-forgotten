@@ -1,0 +1,55 @@
+charlotte: Looks like I have to enter these colors in the correct order now.
+charlotte: Alright, the first color is...
+- Blue
+	set {first_color} = "blue"
+- Red
+	set {first_color} = "red"
+- Green
+	set {first_color} = "green"
+- Yellow
+	set {first_color} = "yellow"
+charlotte: Next,[pause=0.5] the second color is...
+- Blue
+	set {second_color} = "blue"
+- Red
+	set {second_color} = "red"
+- Green
+	set {second_color} = "green"
+- Yellow
+	set {second_color} = "yellow"
+charlotte: Now,[pause=0.5] the third color should be...
+- Blue
+	set {third_color} = "blue"
+- Red
+	set {third_color} = "red"
+- Green
+	set {third_color} = "green"
+- Yellow
+	set {third_color} = "yellow"
+charlotte: And for the last one...
+- Blue
+	set {fourth_color} = "blue"
+- Red
+	set {fourth_color} = "red"
+- Green
+	set {fourth_color} = "green"
+- Yellow
+	set {fourth_color} = "yellow"
+if {first_color} == "yellow" and {second_color} == "red" and {third_color} == "blue" and {fourth_color} == "green":
+	charlotte: Whoa…[pause=0.5] That was harder to unlock than I expected.
+	charlotte: But…[pause=0.5] how did the lock change?
+	charlotte: No one ever touches my diary except me…
+	charlotte: Well,[pause=0.5] regardless,[pause=0.5] I should write down what happened today.
+	charlotte: Wait…
+	charlotte: What…?
+	charlotte: These sketches…
+	charlotte: Why are there drawings of…
+	charlotte: …the Amnesiac…?
+	charlotte: I’ve never…
+	charlotte: And these cryptic messages…[pause=0.5] I never wrote these…
+	charlotte: What the…
+	charlotte: What’s happening…?
+	[signal arg="show_diary_page"]
+else:
+	charlotte: What?[pause=0.5] It’s not opening?
+	charlotte: I must’ve entered the wrong combination![pause=0.5] Ugh!

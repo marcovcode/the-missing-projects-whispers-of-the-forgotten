@@ -38,6 +38,7 @@ directories/dtl_directory={
 "found_bed_piece": "res://timelines/found_bed_piece.dtl",
 "found_wardrobe_piece": "res://timelines/found_wardrobe_piece.dtl",
 "game_saved": "res://timelines/game_saved.dtl",
+"insert_color_sequence": "res://timelines/insert_color_sequence.dtl",
 "insert_diary_code": "res://timelines/insert_diary_code.dtl",
 "just_clothes_in_wardrobe": "res://timelines/just_clothes_in_wardrobe.dtl",
 "music_box_song": "res://timelines/music_box_song.dtl",
@@ -54,7 +55,11 @@ layout/style_list=["res://styles/reference/reference.tres", "res://styles/full_s
 layout/default_style="res://styles/bottom/bottom.tres"
 variables={
 "diary_code": "1234",
-"inserted_diary_code": "0"
+"first_color": "",
+"fourth_color": "",
+"inserted_diary_code": "0",
+"second_color": "",
+"third_color": ""
 }
 glossary/default_case_sensitive=true
 extensions_folder="res://addons/dialogic_additions"
