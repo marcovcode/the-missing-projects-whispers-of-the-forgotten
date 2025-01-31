@@ -54,7 +54,6 @@ directories/dtl_directory={
 layout/style_list=["res://styles/reference/reference.tres", "res://styles/full_screen/full_screen.tres", "res://styles/bottom/bottom.tres"]
 layout/default_style="res://styles/bottom/bottom.tres"
 variables={
-"diary_code": "1234",
 "first_color": "",
 "fourth_color": "",
 "inserted_diary_code": "0",
