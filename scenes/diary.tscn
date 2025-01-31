@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://cssb6awc6tmpw" path="res://assets/sprites/diary.png" id="1_wse7o"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ffch5"]
-size = Vector2(8, 17)
+size = Vector2(28.7188, 19)
 
 [node name="Diary" type="Area2D"]
 script = ExtResource("1_8rl55")
@@ -13,5 +13,5 @@ script = ExtResource("1_8rl55")
 texture = ExtResource("1_wse7o")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, 3.5)
+position = Vector2(0, 2.5)
 shape = SubResource("RectangleShape2D_ffch5")
