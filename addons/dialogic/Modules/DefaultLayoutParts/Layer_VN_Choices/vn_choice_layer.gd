@@ -112,7 +112,7 @@ func _apply_export_overrides() -> void:
 		choice.custom_minimum_size = boxes_min_size
 
 
-	set(&'theme', layer_theme)
+	set(&'theme',layer_theme)
 
 	# apply sound settings
 	var button_sound: DialogicNode_ButtonSound = get_button_sound()
