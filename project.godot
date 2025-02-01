@@ -31,6 +31,7 @@ directories/dch_directory={
 directories/dtl_directory={
 "a_day_in_december": "res://timelines/a_day_in_december.dtl",
 "a_week_later": "res://timelines/a_week_later.dtl",
+"diary_lock_changed": "res://timelines/diary_lock_changed.dtl",
 "figures_out_diary_code": "res://timelines/figures_out_diary_code.dtl",
 "flashing_colors": "res://timelines/flashing_colors.dtl",
 "forgot_diary_code": "res://timelines/forgot_diary_code.dtl",
@@ -42,6 +43,7 @@ directories/dtl_directory={
 "insert_diary_code": "res://timelines/insert_diary_code.dtl",
 "just_clothes_in_wardrobe": "res://timelines/just_clothes_in_wardrobe.dtl",
 "music_box_song": "res://timelines/music_box_song.dtl",
+"must_figure_out_color_sequence": "res://timelines/must_figure_out_color_sequence.dtl",
 "night_table": "res://timelines/night_table.dtl",
 "old_tv": "res://timelines/old_tv.dtl",
 "returned_home_from_school": "res://timelines/returned_home_from_school.dtl",

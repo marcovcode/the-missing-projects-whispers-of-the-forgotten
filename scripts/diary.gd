@@ -27,5 +27,11 @@ func _physics_process(delta):
                     a_day_in_december_progress["has_checked_diary"] = true
                     Dialogic.start("forgot_diary_code")
             elif current_chapter == "a_week_later":
-                if a_week_later_progress["has_seen_colors"] and a_week_later_progress["has_listened_to_song"]:
-                    Dialogic.start("insert_color_sequence")
+                if a_week_later_progress["has_checked_diary"]:
+                    if a_week_later_progress["has_seen_colors"] and a_week_later_progress["has_listened_to_song"]:
+                        Dialogic.start("insert_color_sequence")
+                    else:
+                        Dialogic.start("must_figure_out_color_sequence")
+                else:
+                    a_week_later_progress["has_checked_diary"] = true
+                    Dialogic.start("diary_lock_changed")
