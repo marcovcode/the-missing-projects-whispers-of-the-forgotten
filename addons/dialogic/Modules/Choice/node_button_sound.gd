@@ -19,7 +19,7 @@ func _ready() -> void:
 func play_sound(sound) -> void:
 	if sound != null:
 		stream = sound
-		play()
+		# play()
 
 func _connect_all_buttons() -> void:
 	for child in get_parent().get_children():
@@ -49,4 +49,3 @@ func _on_focus(custom_sound) -> void:
 		play_sound(custom_sound)
 	else:
 		play_sound(sound_focus)
-

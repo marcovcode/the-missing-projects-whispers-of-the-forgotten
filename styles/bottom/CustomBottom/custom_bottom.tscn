@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=3 uid="uid://g3er0exnsn5n"]
+[gd_scene load_steps=16 format=3 uid="uid://g3er0exnsn5n"]
 
 [ext_resource type="Script" path="res://styles/bottom/CustomBottom/default_layout_base.gd" id="1_ifsho"]
 [ext_resource type="FontFile" uid="uid://sdkkg07xuqar" path="res://assets/fonts/04B_03.ttf" id="2_030jl"]
@@ -10,8 +10,6 @@
 [ext_resource type="Script" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_VN_Choices/vn_choice_layer.gd" id="8_w6tso"]
 [ext_resource type="Script" path="res://addons/dialogic/Modules/Choice/node_choice_button.gd" id="9_mf40c"]
 [ext_resource type="Script" path="res://addons/dialogic/Modules/Choice/node_button_sound.gd" id="10_tq21w"]
-[ext_resource type="AudioStream" uid="uid://b6c1p14bc20p1" path="res://addons/dialogic/Example Assets/sound-effects/typing1.wav" id="11_oayrw"]
-[ext_resource type="AudioStream" uid="uid://c2viukvbub6v6" path="res://addons/dialogic/Example Assets/sound-effects/typing4.wav" id="12_2b8gw"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_aynu0"]
 content_margin_left = 5.0
@@ -34,6 +32,8 @@ border_width_bottom = 1
 border_color = Color(0.235294, 0.133333, 0.431373, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tg5i0"]
+content_margin_left = 7.0
+content_margin_right = 7.0
 bg_color = Color(0.435294, 0.333333, 0.631373, 1)
 border_width_left = 1
 border_width_top = 1
@@ -44,34 +44,6 @@ border_color = Color(0.235294, 0.133333, 0.431373, 1)
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_e1wql"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_v0bns"]
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8jbgo"]
-bg_color = Color(0.237145, 0.1333, 0.43, 0)
-border_width_left = 1
-border_width_top = 1
-border_width_right = 1
-border_width_bottom = 1
-border_color = Color(0.831373, 0.745098, 1, 1)
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kwvie"]
-bg_color = Color(0.237145, 0.1333, 0.43, 0)
-border_width_left = 1
-border_width_top = 1
-border_width_right = 1
-border_width_bottom = 1
-border_color = Color(0.831373, 0.745098, 1, 1)
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3latf"]
-content_margin_left = 4.0
-content_margin_right = 4.0
-bg_color = Color(0.237145, 0.1333, 0.43, 0)
-border_width_left = 1
-border_width_top = 1
-border_width_right = 1
-border_width_bottom = 1
-border_color = Color(0.831373, 0.745098, 1, 1)
-
-[sub_resource type="AudioStream" id="AudioStream_0m3y8"]
 
 [node name="Custom" type="CanvasLayer"]
 script = ExtResource("1_ifsho")
@@ -186,18 +158,17 @@ grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
 script = ExtResource("8_w6tso")
+boxes_v_separation = 2
+boxes_fill_width = false
 apply_overrides_on_ready = true
 
 [node name="Choices" type="HBoxContainer" parent="Choices"]
 layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
+anchors_preset = 14
 anchor_top = 0.5
-anchor_right = 0.5
+anchor_right = 1.0
 anchor_bottom = 0.5
-offset_left = -75.0
 offset_top = -20.0
-offset_right = 75.0
 offset_bottom = -2.0
 grow_horizontal = 2
 grow_vertical = 2
@@ -208,63 +179,64 @@ metadata/_edit_layout_mode = 1
 
 [node name="Button" type="Button" parent="Choices/Choices"]
 layout_mode = 2
+size_flags_horizontal = 0
 theme_override_colors/font_hover_color = Color(0.831373, 0.745098, 1, 1)
 theme_override_colors/font_pressed_color = Color(0.831373, 0.745098, 1, 1)
 theme_override_colors/font_focus_color = Color(0.831373, 0.745098, 1, 1)
 theme_override_colors/font_color = Color(0.635294, 0.533333, 0.831373, 1)
 theme_override_fonts/font = ExtResource("2_030jl")
 theme_override_font_sizes/font_size = 8
-theme_override_styles/hover = SubResource("StyleBoxFlat_8jbgo")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_kwvie")
-theme_override_styles/normal = SubResource("StyleBoxFlat_3latf")
+theme_override_styles/hover = SubResource("StyleBoxFlat_tg5i0")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_tg5i0")
+theme_override_styles/normal = SubResource("StyleBoxFlat_tg5i0")
 text = "Text"
 script = ExtResource("9_mf40c")
 
 [node name="Button2" type="Button" parent="Choices/Choices"]
 layout_mode = 2
+size_flags_horizontal = 0
 theme_override_colors/font_hover_color = Color(0.831373, 0.745098, 1, 1)
 theme_override_colors/font_pressed_color = Color(0.831373, 0.745098, 1, 1)
 theme_override_colors/font_focus_color = Color(0.831373, 0.745098, 1, 1)
 theme_override_colors/font_color = Color(0.635294, 0.533333, 0.831373, 1)
 theme_override_fonts/font = ExtResource("2_030jl")
 theme_override_font_sizes/font_size = 8
-theme_override_styles/hover = SubResource("StyleBoxFlat_8jbgo")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_kwvie")
-theme_override_styles/normal = SubResource("StyleBoxFlat_3latf")
+theme_override_styles/hover = SubResource("StyleBoxFlat_tg5i0")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_tg5i0")
+theme_override_styles/normal = SubResource("StyleBoxFlat_tg5i0")
 text = "Text"
 script = ExtResource("9_mf40c")
 
 [node name="Button3" type="Button" parent="Choices/Choices"]
 layout_mode = 2
+size_flags_horizontal = 0
 theme_override_colors/font_hover_color = Color(0.831373, 0.745098, 1, 1)
 theme_override_colors/font_pressed_color = Color(0.831373, 0.745098, 1, 1)
 theme_override_colors/font_focus_color = Color(0.831373, 0.745098, 1, 1)
 theme_override_colors/font_color = Color(0.635294, 0.533333, 0.831373, 1)
 theme_override_fonts/font = ExtResource("2_030jl")
 theme_override_font_sizes/font_size = 8
-theme_override_styles/hover = SubResource("StyleBoxFlat_8jbgo")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_kwvie")
-theme_override_styles/normal = SubResource("StyleBoxFlat_3latf")
+theme_override_styles/hover = SubResource("StyleBoxFlat_tg5i0")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_tg5i0")
+theme_override_styles/normal = SubResource("StyleBoxFlat_tg5i0")
 text = "Text"
 script = ExtResource("9_mf40c")
 
 [node name="Button4" type="Button" parent="Choices/Choices"]
 layout_mode = 2
+size_flags_horizontal = 0
 theme_override_colors/font_hover_color = Color(0.831373, 0.745098, 1, 1)
 theme_override_colors/font_pressed_color = Color(0.831373, 0.745098, 1, 1)
 theme_override_colors/font_focus_color = Color(0.831373, 0.745098, 1, 1)
 theme_override_colors/font_color = Color(0.635294, 0.533333, 0.831373, 1)
 theme_override_fonts/font = ExtResource("2_030jl")
 theme_override_font_sizes/font_size = 8
-theme_override_styles/hover = SubResource("StyleBoxFlat_8jbgo")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_kwvie")
-theme_override_styles/normal = SubResource("StyleBoxFlat_3latf")
+theme_override_styles/hover = SubResource("StyleBoxFlat_tg5i0")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_tg5i0")
+theme_override_styles/normal = SubResource("StyleBoxFlat_tg5i0")
 text = "Text"
 script = ExtResource("9_mf40c")
 
 [node name="DialogicNode_ButtonSound" type="AudioStreamPlayer" parent="Choices/Choices"]
 unique_name_in_owner = true
 script = ExtResource("10_tq21w")
-sound_pressed = ExtResource("11_oayrw")
-sound_hover = ExtResource("12_2b8gw")
-sound_focus = SubResource("AudioStream_0m3y8")
