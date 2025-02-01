@@ -23,5 +23,6 @@ func _physics_process(delta):
         if Input.is_action_just_pressed("interact") and can_interact:
             if current_chapter == "a_week_later":
                 Dialogic.start("music_box_song")
+                has_listened_to_song = true
             else:
                 Dialogic.start("simple_music_box")
