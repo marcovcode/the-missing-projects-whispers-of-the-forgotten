@@ -37,6 +37,7 @@ directories/dtl_directory={
 "forgot_diary_code": "res://timelines/forgot_diary_code.dtl",
 "found_basket_piece": "res://timelines/found_basket_piece.dtl",
 "found_bed_piece": "res://timelines/found_bed_piece.dtl",
+"found_misterious_sketches": "res://timelines/found_misterious_sketches.dtl",
 "found_wardrobe_piece": "res://timelines/found_wardrobe_piece.dtl",
 "game_saved": "res://timelines/game_saved.dtl",
 "insert_color_sequence": "res://timelines/insert_color_sequence.dtl",

@@ -25,3 +25,5 @@ func _ready():
 
     if current_chapter == "a_day_in_december":
         Dialogic.start("the_amnesiac_dream")
+    elif current_chapter == "a_week_later":
+        Dialogic.start("found_misterious_sketches")
